@@ -107,13 +107,20 @@
       
       .dropdown-menu{
         font-size: large;
+        border-radius: 0% !important;
+       
+        
       }
-
-      .dropdown-item:hover{
-        background-color: #0b0f19;
-        color: #fff;
+      
+      .dropdown-item{
+        width: 240px;
+      
       }
-
+      
+      #gradient {
+          background-image: linear-gradient(to right, white, #AED6F1);
+        }
+      
       @media screen and (max-width: 600px) {
         .nav-custom-right{
           position: relative;
@@ -184,11 +191,11 @@
 
       <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+      <header id="gradient" class="header navbar navbar-expand-lg bg-light navbar-sticky">
         <div class="container px-3">
           <a href="" class="navbar-brand pe-3">
-            <img src="/static/assets/img/logo.svg" width="47" alt="Silicon">
-            Nimusoft
+            <img src="/static/assets/img/logo.svg" width="120" alt="Nimusoft">
+            
           </a>
           
           <div id="navbarNav" class="offcanvas offcanvas-end">
@@ -201,22 +208,97 @@
               <ul class="navbar-nav nav-custom-right mb-2 mb-lg-0">
                 
                 
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                   <ul class="dropdown-menu">
-                    <li><a href="" class="dropdown-item">Account Details</a></li>
-                    <li><a href="" class="dropdown-item">Security</a></li>
-                    <li><a href="" class="dropdown-item">Notifications</a></li>
-                    <li><a href="" class="dropdown-item">Messages</a></li>
+                    
+                    
+                    <hr style="margin-top: -8.4px;">
+                    <li style="margin-bottom: 8px; margin-top: 8px;">
+                      
+                      <a href="" class="dropdown-item">Medical Solution</a>
+                    
+                    </li>
+                    <hr>
+                    
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">Mobile App Development</a></li>
+                    <hr>
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">ERP Solution</a></li>
+                    <hr>
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">E-commerce Solution</a></li>
+                    <hr>
+
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">Cyber Security</a></li>
+                    <hr>
+
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">Data Analytics</a></li>
+                    <hr>
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">IOT & VR</a></li>
+                    <hr>
+
+                    <li style="margin-bottom: 8px; margin-top: 9px;"><a href="" class="dropdown-item">Cloud Services</a></li>
+                    <hr style="margin-bottom: -8.5px;">
+                    
                     
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="" class="nav-link">UI Kit</a>
+                
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Industries</a>
+                  <ul class="dropdown-menu">
+                    
+                    
+                    <hr style="margin-top: -8.4px;">
+                    <li style="margin-bottom: 8px; margin-top: 8px;">
+                      
+                      <a href="" class="dropdown-item">Education</a>
+                    
+                    </li>
+                    <hr>
+                    
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">Real Estate</a></li>
+                    <hr>
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">Software</a></li>
+                    <hr>
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">Healthcare</a></li>
+                    <hr>
+
+                    <li style="margin-bottom: 8px; margin-top: 8px;"><a href="" class="dropdown-item">Robotics & AI</a></li>
+                    <hr>
+
+                   
+                    
+
+                    <li style="margin-bottom: 8px; margin-top: 9px;"><a href="" class="dropdown-item">E-commerce</a></li>
+                    <hr style="margin-bottom: -8.5px;">
+                    
+                    
+                  </ul>
                 </li>
+                
+                
                 <li class="nav-item">
-                  <a href="" class="nav-link">Docs</a>
+                  <a href="" class="nav-link">Case Studies</a>
                 </li>
+                
+                <li class="nav-item">
+                  <a href="" class="nav-link">About Us</a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a href="" class="nav-link">Career</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="" class="nav-link">Contact Us</a>
+                </li>
+
+              
               </ul>
             </div>
             
