@@ -27,7 +27,10 @@
 
     <!-- Vendor Styles -->
     <link rel="stylesheet" media="screen" href="/static/assets/vendor/boxicons/css/boxicons.min.css"/>
+
     <link rel="stylesheet" media="screen" href="/static/assets/vendor/swiper/swiper-bundle.min.css"/>
+
+
 
     <!-- Main Theme Styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="/static/assets/css/theme.min.css">
@@ -121,11 +124,27 @@
           background-image: linear-gradient(to right, white, #AED6F1);
         }
       
+        
+      
       @media screen and (max-width: 600px) {
         .nav-custom-right{
           position: relative;
           float: left;
         }
+        
+        .jarallax{
+          height: 280px !important;
+          margin-top: -10px;
+        }
+        
+        hr{
+          display: none;
+        }
+
+        .dropdown-item{
+          font-size: medium;
+        }
+      
       }
         
       
@@ -323,19 +342,27 @@
       </header>
 
 
-      <!-- Hero slider + BG parallax -->
-      <section class="jarallax dark-mode bg-dark py-xxl-5" data-jarallax data-speed="0.4">
-        <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
-        <div class="jarallax-img" style="background-image: url(/static/assets/img/landing/software-company/hero-bg.jpg);"></div>
+       <!-- Hero slider + BG parallax -->
+      <section>
+       
+        
+        <!-- Swiper tabs -->
+        <div style="margin-top: 76px; height: 510px !important;" class="swiper-tabs position-absolute top-0 start-0 w-100 h-100">
+          
+          <div id="image-3" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab active" data-jarallax data-speed="0.4">
+            <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
+            <div class="jarallax-img img-fluid" style="background-image: url(/static/assets/img/landing/software-company/case-study01.jpg);"></div>
+          </div>
+          <div id="image-4" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab" data-jarallax data-speed="0.4">
+            <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
+            <div class="jarallax-img img-fluid" style="background-image: url(/static/assets/img/landing/software-company/case-study02.jpg);"></div>
+          </div>
+        </div>
+        
+        
         <div class="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
 
-          <!-- Slider controls (Prev / next) -->
-          <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2">
-            <i class="bx bx-chevron-left fs-1"></i>
-          </button>
-          <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2">
-            <i class="bx bx-chevron-right fs-1"></i>
-          </button>
+          
 
           <!-- Slider -->
           <div class="container text-center py-xl-5">
@@ -343,11 +370,17 @@
               <div class="col-xl-8 col-lg-9 col-md-10 col-11">
                 <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options='{
                   "effect": "fade",
-                  "speed": 500,
+                  "speed": 800,
+                  
                   "autoplay": {
-                    "delay": 5500,
+                    "delay": 4500,
                     "disableOnInteraction": false
                   },
+                  
+                  "spaceBetween": 30,
+                  "loop": true,
+                      
+                  "tabs": true,
                   "pagination": {
                     "el": ".swiper-pagination",
                     "clickable": true
@@ -360,77 +393,38 @@
                   <div class="swiper-wrapper">
 
                     <!-- Item -->
-                    <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">The Best IT Solutions for Your Business</h2>
-                      <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We provide the wide range of high quality IT services and best practices solutions to our customers making their business better.</p>
-                      </div>
-                      <div class="scale-up delay-1">
-                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Start your project</a>
-                      </div>
+                    <div class="swiper-slide" data-swiper-tab="#image-3">
+                      
 
                     </div>
 
                     <!-- Item -->
-                    <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">Award-Winning Software Development</h2>
-                      <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We build complex web, desktop and mobile applications. With us you get quality software and perfect service every time.</p>
-                      </div>
-                      <div class="scale-up delay-1">
-                        <a href="#" class="btn btn-primary shadow-primary btn-lg">View case studies</a>
-                      </div>
+                    <div class="swiper-slide" data-swiper-tab="#image-4">
+                      
                     </div>
 
-                    <!-- Item -->
-                    <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">24/7 Tech &amp; Business Support</h2>
-                      <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We ensure lifetime support of all applications we've built. Our support department is a team of professionals who will assist you 24/7.</p>
-                      </div>
-                      <div class="scale-up delay-1">
-                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Work with us</a>
-                      </div>
-                    </div>
+                    
                   </div>
 
-                  <!-- Pagination (bullets) -->
-                  <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
+                  
+                
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
-          <div class="d-flex mb-4 mb-sm-0">
-            <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
-              <i class="bx bxl-linkedin"></i>
-            </a>
-            <a href="#" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2">
-              <i class="bx bxl-facebook"></i>
-            </a>
-            <a href="#" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-2">
-              <i class="bx bxl-twitter"></i>
-            </a>
-            <a href="#" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-2">
-              <i class="bx bxl-youtube"></i>
-            </a>
-          </div>
-          <a href="#" class="nav-link px-0">
-            Our case studies
-            <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
-          </a>
-        </div>
+       
+
       </section>
 
 
       <!-- About -->
-      <section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
+      <section style="margin-top: 145px !important;" class="container pt-5 mt-2 mt-md-4 mt-lg-5">
         <div class="row pt-xl-3">
           <div class="col-md-5 text-center text-md-start pb-5">
             <h1 class="mb-4">Award-Winning Software Company</h1>
             <p class="fs-lg pb-lg-3 mb-4">We create diverse, complex, web and mobile solutions for any business need. With us you get quality software and perfect service every time.</p>
-            <a href="" class="btn btn-primary shadow-primary btn-lg">More About Us</a>
+            <a href="about-v2.html" class="btn btn-primary shadow-primary btn-lg">More About Us</a>
             <div class="mt-3 mt-sm-0 pt-4 pt-sm-5 mt-xl-4">
               <h2 class="h6 mb-4">Some of our awards:</h2>
               <img src="/static/assets/img/landing/software-company/awards.svg" alt="Awards">
@@ -453,14 +447,14 @@
               <p class="fs-lg text-muted mb-md-0">We are focused on helping brands grow through digital transformation services. We bring real solutions to each client’s problems through a deep understanding of their market, solution, and vision.</p>
             </div>
             <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
-              <a href="" class="btn btn-outline-primary btn-lg">See all services</a>
+              <a href="services-v1.html" class="btn btn-outline-primary btn-lg">See all services</a>
             </div>
           </div>
           <div class="row row-cols-1 row-cols-md-2">
 
             <!-- Item -->
             <div class="col py-4 my-2 my-sm-3">
-              <a href="" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 me-xl-2">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 me-xl-2">
                 <div class="card-body pt-3">
                   <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                     <img src="/static/assets/img/services/icons/cms.svg" class="d-block m-1" width="40" alt="Icon">
@@ -476,7 +470,7 @@
   
             <!-- Item -->
             <div class="col py-4 my-2 my-sm-3">
-              <a href="" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                 <div class="card-body pt-3">
                   <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                     <img src="/static/assets/img/services/icons/rocket.svg" class="d-block m-1" width="40" alt="Icon">
@@ -492,7 +486,7 @@
   
             <!-- Item -->
             <div class="col py-4 my-2 my-sm-3">
-              <a href="" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                 <div class="card-body pt-3">
                   <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                     <img src="/static/assets/img/services/icons/mobile-app.svg" class="d-block m-1" width="40" alt="Icon">
@@ -508,7 +502,7 @@
   
             <!-- Item -->
             <div class="col py-4 my-2 my-sm-3">
-              <a href="" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                 <div class="card-body pt-3">
                   <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                     <img src="/static/assets/img/services/icons/analytics.svg" class="d-block m-1" width="40" alt="Icon">
@@ -524,7 +518,7 @@
   
             <!-- Item -->
             <div class="col py-4 my-2 my-sm-3">
-              <a href="" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                 <div class="card-body pt-3">
                   <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                     <img src="/static/assets/img/services/icons/web-search.svg" class="d-block m-1" width="40" alt="Icon">
@@ -540,7 +534,7 @@
   
             <!-- Item -->
             <div class="col py-4 my-2 my-sm-3">
-              <a href="" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
                 <div class="card-body pt-3">
                   <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
                     <img src="/static/assets/img/services/icons/timer.svg" class="d-block m-1" width="40" alt="Icon">
@@ -578,11 +572,11 @@
           <div class="swiper-tabs position-absolute top-0 start-0 w-100 h-100">
             <div id="image-1" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab active" data-jarallax data-speed="0.4">
               <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
-              <div class="jarallax-img" style="background-image: url(/static/assets/img/landing/software-company/case-study01.jpg);"></div>
+              <div class="jarallax-img img-fluid" style="background-image: url(/static/assets/img/landing/software-company/case-study01.jpg);"></div>
             </div>
             <div id="image-2" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab" data-jarallax data-speed="0.4">
               <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
-              <div class="jarallax-img" style="background-image: url(/static/assets/img/landing/software-company/case-study02.jpg);"></div>
+              <div class="jarallax-img img-fluid" style="background-image: url(/static/assets/img/landing/software-company/case-study02.jpg);"></div>
             </div>
           </div>
 
@@ -607,6 +601,8 @@
                     <div class="swiper" data-swiper-options='{
                       "spaceBetween": 30,
                       "loop": true,
+                      "speed": 500,
+                      
                       "tabs": true,
                       "pagination": {
                         "el": "#case-study-pagination",
@@ -931,7 +927,7 @@
                         <span class="fs-sm text-muted">1 day ago</span>
                       </div>
                       <h3 class="h4">
-                        <a href="" class="stretched-link">How the Millennial Lifestyle Changes as Service Prices Rise</a>
+                        <a href="blog-single.html" class="stretched-link">How the Millennial Lifestyle Changes as Service Prices Rise</a>
                       </h3>
                       <p class="mb-0">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet. Mauris duis eleifend faucibus amet sagittis.</p>
                     </div>
@@ -961,7 +957,7 @@
                         <span class="fs-sm text-muted">12 hours ago</span>
                       </div>
                       <h3 class="h4">
-                        <a href="" class="stretched-link">Mobile App Generates Data for the Energy Management</a>
+                        <a href="blog-single.html" class="stretched-link">Mobile App Generates Data for the Energy Management</a>
                       </h3>
                       <p class="mb-0">Sociis sit risus id. Sit facilisis dolor arcu, fermentum vestibulum arcu ele. Pulvinar at maecenas maecenas pharetra, tincidunt sollicitudin in in. </p>
                     </div>
@@ -991,7 +987,7 @@
                         <span class="fs-sm text-muted">May 24, 2021</span>
                       </div>
                       <h3 class="h4">
-                        <a href="" class="stretched-link">What the Software Stock Slump Means for the Market</a>
+                        <a href="blog-single.html" class="stretched-link">What the Software Stock Slump Means for the Market</a>
                       </h3>
                       <p class="mb-0">Id mollis consectetur congue egestas egestas suspendisse blandit justo. Tellus augue commodo id quis tempus etiam pulvinar at maecenas.</p>
                     </div>
@@ -1021,7 +1017,7 @@
                         <span class="fs-sm text-muted">Sep 3, 2021</span>
                       </div>
                       <h3 class="h4">
-                        <a href="" class="stretched-link">5 Bad Landing Page Examples & How We Would Fix Them</a>
+                        <a href="blog-single.html" class="stretched-link">5 Bad Landing Page Examples & How We Would Fix Them</a>
                       </h3>
                       <p class="mb-0">Totam, soluta placeat hic adipisci reprehenderit iusto est nulla dolorum doloremque inventore suscipit consequuntur distinctio id.</p>
                     </div>
@@ -1090,6 +1086,8 @@
           <a href="#" class="btn btn-primary shadow-primary btn-lg">Work with us</a>
         </div>
       </section>
+    
+    
     </main>
 
 
@@ -1173,11 +1171,15 @@
     
     <script src="/static/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/static/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    
     <script src="/static/assets/vendor/jarallax/dist/jarallax.min.js"></script>
     <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
     
+  
     <!-- Main Theme Script -->
     <script src="/static/assets/js/theme.min.js"></script>
+
+    
   
   
   
