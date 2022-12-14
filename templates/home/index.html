@@ -435,232 +435,131 @@
       <section style="margin-top: 30px;" class="container pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
         <h2 class="h1 text-center pb-3 pb-lg-4">Industries We Serve</h2>
 
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-nowrap active" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="true">
-              <i class="bx bxs-graduation fs-xl opacity-60 me-2"></i>
-              Education
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-nowrap" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce" type="button" role="tab" aria-controls="ecommerce" aria-selected="false">
-              <i class="bx bx-cart-alt fs-lg opacity-60 me-2"></i>
-              E-Commerce
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-nowrap" id="sports-tab" data-bs-toggle="tab" data-bs-target="#sports" type="button" role="tab" aria-controls="sports" aria-selected="false">
-              <i class="bx bx-brain fs-xl opacity-60 me-2"></i>
-              Robotics and AI
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-nowrap" id="construction-tab" data-bs-toggle="tab" data-bs-target="#construction" type="button" role="tab" aria-controls="construction" aria-selected="false">
-              <i class="bx bx-paint-roll fs-lg opacity-60 me-2"></i>
-              Construstion
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-nowrap" id="medicine-tab" data-bs-toggle="tab" data-bs-target="#medicine" type="button" role="tab" aria-controls="medicine" aria-selected="false">
-              <i class="bx bx-plus-medical fs-bse opacity-60 me-2"></i>
-              Healthcare
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-nowrap" id="real-estate-tab" data-bs-toggle="tab" data-bs-target="#real-estate" type="button" role="tab" aria-controls="real-estate" aria-selected="false">
-              <i class="bx bx-buildings fs-lg opacity-60 me-2"></i>
-              Real Estate
-            </button>
-          </li>
-          
-        </ul>
+        <div class="swiper mx-n2" data-swiper-options='{
+          "slidesPerView": 2,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 3,
+              "spaceBetween": 8
+            },
+            "650": {
+              "slidesPerView": 4,
+              "spaceBetween": 8
+            },
+            "900": {
+              "slidesPerView": 5,
+              "spaceBetween": 8
+            },
+            "1100": {
+              "slidesPerView": 6,
+              "spaceBetween": 8
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
 
-        <!-- Tab panes -->
-        <div class="tab-content bg-secondary rounded-3 py-4">
-
-          <!-- Education -->
-          <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">
-            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                <h3 class="mb-lg-4">Education</h3>
-                <p>About this service</p>
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              
+              <div class="card card-body card-hover px-2 mx-2">
+                
+                <i style="text-align: center; font-size: xx-large; margin-top: -4px;" class='bx bx-plus-medical'></i>
+                
+                <h6 style="text-align: center; color: #34495E; margin-top: 7px; margin-bottom: -5px;">Healthcare</h6>
+              
+              
               </div>
-              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                <img src="" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="">
-              </div>
-            </div>
-          </div>
-
-          <!-- E-Commerce -->
-          <div class="tab-pane fade" id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab">
-            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                <h3 class="mb-lg-4">E-Commerce</h3>
-                <p>About this service</p>
-              </div>
-              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                <img src="" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Sports -->
-          <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
-            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                <h3 class="mb-lg-4">Robotics And AI</h3>
-                <p>About this service</p>
-              </div>
-              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                <img src="" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Construction -->
-          <div class="tab-pane fade" id="construction" role="tabpanel" aria-labelledby="construction-tab">
-            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                <h3 class="mb-lg-4">Construction</h3>
-                <p>About this service</p>
-              </div>
-              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                <img src="" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Medicine -->
-          <div class="tab-pane fade" id="medicine" role="tabpanel" aria-labelledby="medicine-tab">
-            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                <h3 class="mb-lg-4">Healthcare</h3>
-                <p>About this service</p>
-              </div>
-              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                <img src="" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="">
-              </div>
-            </div>
-          </div>
-
-          <!-- Real Estate -->
-          <div class="tab-pane fade" id="real-estate" role="tabpanel" aria-labelledby="real-estate-tab">
-            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
-              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
-                <h3 class="mb-lg-4">Real Estate</h3>
-                <p>About this service</p>
-              </div>
-              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
-                <img src="" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="">
-              </div>
-            </div>
-          </div>
-
-         
-        </div>
-      </section>
-
-
-
-      <!-- Case studies -->
-      <section class="bg-secondary pt-1">
-        <div class="container">
-          
-          <div style="margin-top: 30px;" class="row">
             
-          <h2 class="h1 text-center pt-1 pt-xl-2 mb-4">Case Studies</h2>
-          <p class="fs-lg text-muted col-lg-7 col-xl-12 text-center pb-4 mb-2 mb-lg-3">We bring real solutions to each client’s problems through<br> a deep understanding of their market, solution, and vision.</p>
-          
             
-          </div>
-          
-          
-        
-        
-        </div>
-
-        <div class="position-relative py-lg-4 py-xl-5">
-
-          <!-- Swiper tabs -->
-          <div class="swiper-tabs position-absolute top-0 start-0 w-100 h-100">
-            <div id="image-1" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab active" data-jarallax data-speed="0.4">
-              <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
-              <div class="jarallax-img img-fluid" style="background-image: url(/static/assets/img/landing/software-company/case-study01.jpg);"></div>
             </div>
-            <div id="image-2" class="jarallax position-absolute top-0 start-0 w-100 h-100 swiper-tab" data-jarallax data-speed="0.4">
-              <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
-              <div class="jarallax-img img-fluid" style="background-image: url(/static/assets/img/landing/software-company/case-study02.jpg);"></div>
-            </div>
-          </div>
 
-          <!-- Swiper slider -->
-          <div class="container position-relative zindex-5 py-5">
-            <div class="row py-2 py-md-3">
-              <div class="col-xl-5 col-lg-7 col-md-9">
-
-                <!-- Slider controls (Prev / next) -->
-                <div class="d-flex justify-content-center justify-content-md-start pb-3 mb-3">
-                  <button type="button" id="case-study-prev" class="btn btn-prev btn-icon btn-sm bg-white me-2">
-                    <i class="bx bx-chevron-left"></i>
-                  </button>
-                  <button type="button" id="case-study-next" class="btn btn-next btn-icon btn-sm bg-white ms-2">
-                    <i class="bx bx-chevron-right"></i>
-                  </button>
-                </div>
-
-                <!-- Card -->
-                <div class="card bg-white shadow-sm p-3">
-                  <div class="card-body">
-                    <div class="swiper" data-swiper-options='{
-                      "spaceBetween": 30,
-                      "loop": true,
-                      "speed": 500,
-                      
-                      "tabs": true,
-                      "pagination": {
-                        "el": "#case-study-pagination",
-                        "clickable": true
-                      },
-                      "navigation": {
-                        "prevEl": "#case-study-prev",
-                        "nextEl": "#case-study-next"
-                      }
-                    }'>
-                      <div class="swiper-wrapper">
-
-                        <!-- Item -->
-                        <div class="swiper-slide" data-swiper-tab="#image-1">
-                          <img src="/static/assets/img/landing/software-company/case-study-logo01.png" class="d-block mb-3" width="72" alt="Logo">
-                          <h3 class="mb-2">Cashless payment case study</h3>
-                          <p class="fs-sm text-muted border-bottom pb-3 mb-3">Payment Service Provider Company</p>
-                          <p class="pb-2 pb-lg-3 mb-3">Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat ultrices. Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper...</p>
-                          
-                        </div>
-
-                        <!-- Item -->
-                        <div class="swiper-slide" data-swiper-tab="#image-2">
-                          <img src="/static/assets/img/landing/software-company/case-study-logo02.png" class="d-block mb-3" width="72" alt="Logo">
-                          <h3 class="mb-2">Smart tech case study</h3>
-                          <p class="fs-sm text-muted border-bottom pb-3 mb-3">Data Analytics Company</p>
-                          <p class="pb-2 pb-lg-3 mb-3">Adipiscing quis a at ligula. Gravida gravida diam rhoncus cursus in. Turpis sagittis tempor gravida phasellus sapien. Faucibus donec consectetur sed id sit nisl.</p>
-                          
-                         
-                        
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Pagination (bullets) -->
-                <div class="dark-mode pt-4 mt-3">
-                  <div id="case-study-pagination" class="swiper-pagination position-relative bottom-0"></div>
-                </div>
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              
+              <div class="card card-body card-hover px-2 mx-2">
+                
+                <i style="text-align: center; font-size: xx-large; margin-top: -4px;" class='bx bxs-graduation'></i>
+                
+                <h6 style="text-align: center; color: #34495E; margin-top: 7px; margin-bottom: -5px;">Education</h6>
+              
+              
               </div>
+            
+            
             </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              
+              <div class="card card-body card-hover px-2 mx-2">
+                
+                <i style="text-align: center; font-size: xx-large; margin-top: -4px;" class='bx bxs-building-house'></i>
+                
+                <h6 style="text-align: center; color: #34495E; margin-top: 7px; margin-bottom: -5px;">Real Estate</h6>
+              
+              
+              </div>
+            
+            
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              
+              <div class="card card-body card-hover px-2 mx-2">
+                
+                <i style="text-align: center; font-size: xx-large; margin-top: -4px;" class='bx bxs-cart-alt'></i>
+                
+                <h6 style="text-align: center; color: #34495E; margin-top: 7px; margin-bottom: -5px;">E-commerce</h6>
+              
+              
+              </div>
+            
+            
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              
+              <div class="card card-body card-hover px-2 mx-2">
+                
+                <i style="text-align: center; font-size: xx-large; margin-top: -4px;" class='bx bxs-hard-hat'></i>
+                
+                <h6 style="text-align: center; color: #34495E; margin-top: 7px; margin-bottom: -5px;">Construction</h6>
+              
+              
+              </div>
+            
+            
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide py-3">
+              
+              <div class="card card-body card-hover px-2 mx-2">
+                
+                <i style="text-align: center; font-size: xx-large; margin-top: -4px;" class='bx bxs-brain'></i>
+                
+                <h6 style="text-align: center; color: #34495E; margin-top: 7px; margin-bottom: -5px;">AI & Robotics</h6>
+              
+              
+              </div>
+            
+            
+            </div>
+          
+          
           </div>
+
+          <!-- Pagination (bullets) -->
+          <div class="swiper-pagination position-relative pt-2 mt-4"></div>
         </div>
+      
+      
       </section>
 
 
@@ -670,29 +569,15 @@
       <section style="margin-top: 30px;" class="container pb-5 mb-md-2 mb-xl-4">
         <div class="row pb-lg-2">
           <div class="col-md-5 mb-4 mb-md-0">
-            <div class="card justify-content-center bg-dark h-100 p-4 p-lg-5">
+            <div style="background-color: #154360 !important;" class="card justify-content-center bg-dark h-100 p-4 p-lg-5">
               <div class="p-2">
-                <h3 class="display-4 text-primary mb-1">200+</h3>
+                <h3 style="color: white !important;" class="display-4 text-primary mb-1">20+</h3>
                 <h2 class="text-light pb-5 mb-2">Clients Already Served</h2>
-                <a href="#" class="d-inline-flex align-items-center rounded-3 text-decoration-none py-3 px-4" style="background-color: #3e4265;">
-                  <div class="pe-3">
-                    <div class="fs-xs text-light text-uppercase opaciy-70 mb-2">Reviewed on</div>
-                    <img src="/static/assets/img/about/clutch-logo.svg" width="97" alt="Clutch">
-                  </div>
-                  <div class="ps-1">
-                    <div class="text-nowrap mb-2">
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-warning"></i>
-                      <i class="bx bxs-star text-warning"></i>
-                    </div>
-                    <div class="text-light opacity-70">49 reviews</div>
-                  </div>
-                </a>
+                
               </div>
             </div>
           </div>
+         
           <div class="col-md-7">
             <div class="card border-0 shadow-sm p-4 p-xxl-5">
 
@@ -789,6 +674,7 @@
 
       <!-- Brands (Carousel) -->
       <section class="container pb-5">
+       
         <div class="swiper mx-n2" data-swiper-options='{
           "slidesPerView": 2,
           "pagination": {
