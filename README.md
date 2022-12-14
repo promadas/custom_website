@@ -1,1 +1,1 @@
-# nimusoft
+# Nimusoft Technologies Ltd.
