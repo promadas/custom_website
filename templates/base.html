@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Nimusoft Technologies Ltd.</title>
+    
+    {% block title %}
+    
+    {% endblock %}
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Software development company">
@@ -239,6 +242,8 @@
       }
     </script>
 
+    
+    {% block loading_script %}
     <!-- Page loading scripts -->
     <script>
       (function () {
@@ -251,7 +256,7 @@
         };
       })();
     </script>
-
+    {% endblock %}
     
   </head>
 
@@ -279,7 +284,7 @@
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
     <header id="gradient" class="header navbar navbar-expand-lg bg-light navbar-sticky">
     <div class="container px-3">
-        <a href="" class="navbar-brand pe-3">
+        <a href="/" class="navbar-brand pe-3">
         <img src="https://cdn.nimusoft.com/nimusoft/assets/img/logo.svg" width="120" alt="Nimusoft">
         
         </a>
@@ -295,7 +300,7 @@
             
             
             <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
+                <a href="/" class="nav-link">Home</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -372,16 +377,15 @@
             </li>
             
             <li class="nav-item">
-                <a href="" class="nav-link">About Us</a>
-            </li>
-            
-
-            <li class="nav-item">
-                <a href="" class="nav-link">Career</a>
+                <a href="{% url 'home:about' %}" class="nav-link">About Us</a>
             </li>
 
             <li class="nav-item">
-                <a href="" class="nav-link">Contact Us</a>
+                <a href="{% url 'home:contact' %}" class="nav-link">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">Career</a>
             </li>
 
             
@@ -498,13 +502,7 @@
         </p>
       </div>
     </footer>
-
-
-    <!-- Back to top button -->
-    <a href="#top" class="btn-scroll-top" data-scroll>
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
-    </a>
+    
     {% endblock %}
 
 
@@ -525,12 +523,7 @@
     {% endblock %}
     
     {% block custom_scripts %}
-    <script>
-
-    var myCarousel = document.querySelector('#homeCarousel')
-    var carousel = new bootstrap.Carousel(myCarousel)
-
-    </script>
+    
     {% endblock %}
   
 

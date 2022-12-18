@@ -1,6 +1,13 @@
 
      {% extends 'base.html' %}
      
+     {% block title %}
+      
+      <title>Nimusoft Technologies Ltd.</title>
+    
+     {% endblock %}
+     
+     
      {% block main %}
      <!-- Hero slides -->
       <div id="homeCarousel" class="carousel slides carousel-fade" data-bs-ride="carousel">
@@ -647,6 +654,15 @@
       </section>
 
       {% endblock %}
+
+      {% block custom_scripts %}
+      <script>
+
+      var myCarousel = document.querySelector('#homeCarousel')
+      var carousel = new bootstrap.Carousel(myCarousel)
+
+      </script>
+    {% endblock %}
 
     
     
