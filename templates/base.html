@@ -131,13 +131,22 @@
       .dropdown-menu{
         font-size: large;
         border-radius: 0% !important;
-       
+        
         
       }
       
       .dropdown-item{
         width: 240px;
       
+      }
+
+      .dropdown-item:hover{
+        color: #21618C !important;
+      
+      }
+      
+      .nav-link:hover{
+        color: #145A32 !important;
       }
       
       #gradient {
@@ -153,9 +162,23 @@
       
         @media screen and (max-width: 600px) {
         
-          .technology-logos{
-            margin-left: -2px !important;
-          }
+        .industries-title{
+            margin-top: -80px !important;
+        }
+        
+        .case-title{
+            margin-top: -40px !important;
+        }
+          
+        .horizontal-line{
+          display: block !important;
+
+         }
+        
+        
+        .technology-logos{
+          margin-left: -2px !important;
+        }
       
         .mobile-col {
           margin-left: 0!important;
@@ -262,7 +285,7 @@
 
 
   <!-- Body -->
-  <body>
+  <body style="background-color: #FBFCFC;">
     
     
     {% block page_loader %}
@@ -299,16 +322,18 @@
             <ul class="navbar-nav nav-custom-right mb-2 mb-lg-0">
             
             
-            <li class="nav-item">
+            
+              <li class="nav-item">
                 <a href="/" class="nav-link">Home</a>
             </li>
 
+            
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                 <ul class="dropdown-menu">
                 
                 
-                <hr style="margin-top: -8.4px;">
+                <hr style="margin-top: -9px;">
                 <li style="margin-bottom: 8px; margin-top: 8px;">
                     
                     <a href="" class="dropdown-item">Medical Solution</a>
@@ -332,7 +357,7 @@
                 <hr>
 
                 <li style="margin-bottom: 8px; margin-top: 9px;"><a href="" class="dropdown-item">Cloud Services</a></li>
-                <hr style="margin-bottom: -8.5px;">
+                <hr style="margin-bottom: -9px;">
                 
                 
                 </ul>
@@ -343,7 +368,7 @@
                 <ul class="dropdown-menu">
                 
                 
-                <hr style="margin-top: -8.4px;">
+                <hr style="margin-top: -9px;">
                 <li style="margin-bottom: 8px; margin-top: 8px;">
                     
                     <a href="" class="dropdown-item">Education</a>
@@ -365,7 +390,7 @@
                 
 
                 <li style="margin-bottom: 8px; margin-top: 9px;"><a href="" class="dropdown-item">E-commerce</a></li>
-                <hr style="margin-bottom: -8.5px;">
+                <hr style="margin-bottom: -9px;">
                 
                 
                 </ul>
@@ -373,7 +398,7 @@
             
             
             <li class="nav-item">
-                <a href="" class="nav-link">Case Studies</a>
+                <a href="{% url 'home:case_studies' %}" class="nav-link">Case Studies</a>
             </li>
             
             <li class="nav-item">
@@ -394,8 +419,15 @@
         
         <div class="offcanvas-header border-top">
             
+          
+            <p style="margin-top: -8px; margin-bottom: -8px; margin-left: 27px;">Nimusft Technologies Ltd.</p>
+        
+         
+          
         </div>      
-        </div>
+        
+      
+      </div>
         
         
         
@@ -424,7 +456,7 @@
 
     {% block footer %}
     <!-- Footer -->
-    <footer style="background-color: #154360 !important;" class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+    <footer style="background-color: #154360  !important;" class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
       <div class="container pt-lg-4">
         <div class="row pb-5">
           <div class="col-lg-4 col-md-6">
@@ -432,7 +464,7 @@
               <img src="https://cdn.nimusoft.com/nimusoft/assets/img/logo.svg" width="120" alt="Nimusoft">
               
             </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">5/A, Ga-130/B, Progoti Sharani,<br>Middle Badda, Dhaka-1212.</p>
+            <p class="fs-sm text-light pb-lg-3 mb-4"><b>5/A, Ga-130/B, Progoti Sharani,<br>Middle Badda, Gulshan,<br>Badda, Dhaka-1212.</b></p>
             
             <div style="margin-top: -20px;" class="d-flex mb-4 mb-sm-0">
               <a href="#" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2">
@@ -487,21 +519,29 @@
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 
                 <h6 class="mb-2">Contact Us</h6>
-                <a style="color: white !important;" href="tel:+8801777424142" class="fw-medium social-hover">01777 424142</a><br>
+                <a style="color: white !important;" href="tel:+8801777424142" class="fw-medium social-hover">+88 01777 424142</a><br>
               
                 <a style="color: white !important;" href="mailto:sales@nimusoft.com" class="fw-medium social-hover">sales@nimusoft.com</a>
               
+              
+                
               
               </div>
             </div>
           </div>
         </div>
+        
         <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
           
-          <a class="nav-link social-hover d-inline-block p-0" href="" target="_blank" rel="noopener">Nimusoft Technologies Ltd.</a>
+          <span><b>C-185862/2022, Nimusoft Technologies Ltd.</b></span>
+        
         </p>
+       
+      
       </div>
     </footer>
+    
+    
     
     {% endblock %}
 

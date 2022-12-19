@@ -1,222 +1,38 @@
 
-     {% extends 'base.html' %}
-     
-     {% block title %}
-      
-      <title>Nimusoft Technologies Ltd.</title>
+    {% extends 'base.html' %}
     
-     {% endblock %}
+    {% block title %}
+      
+      <title>Nimusoft | Case Studies </title>
+    
+    {% endblock %}
+    
+    
+    {% block page_loader %}
+    
+    {% endblock %}
+
+    {% block loading_script %}
+    
+    {% endblock %}
+    
+    
+    {% block main %}
      
+        <!-- Breadcrumb -->
+      <nav class="container py-4 mb-lg-2" aria-label="breadcrumb">
+        <ol class="breadcrumb pt-lg-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Case Studies</li>
+        </ol>
+      </nav>
+      
      
-     {% block main %}
-     <!-- Hero slides -->
-      <div id="homeCarousel" class="carousel slides carousel-fade" data-bs-ride="carousel">
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.nimusoft.com/nimusoft/assets/img/slide/img1.jpg" class="w-100 zoom-in-zoom-out" alt="banner">
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.nimusoft.com/nimusoft/assets/img/slide/img2.jpg" class="w-100 zoom-in-zoom-out" alt="banner">
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.nimusoft.com/nimusoft/assets/img/slide/img3.jpg" class="w-100 zoom-in-zoom-out" alt="banner">
-          </div>
-        </div>
-        
-        
-      </div>
 
-      
-
-      <!-- About -->
-      <section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
-        <div class="row pt-xl-3">
-          <div class="col-md-5 text-center text-md-start pb-5">
-            
-            <h3 style="color: #154360" class="mb-4 about-mobile">Nimusft Technologies Ltd.<br> A Software development company</h3>
-           
-           
-            <p class="fs-lg pb-lg-3 mb-4">We create diverse, complex, web and mobile solutions for any business need. With us you get quality software and perfect service every time.</p>
-            
-            <p class="fs-lg pb-lg-3 mb-4">We create diverse, complex, web and mobile solutions for any business need. With us you get quality software and perfect service every time.</p>
-            
-            <p class="fs-lg pb-lg-3 mb-4">We create diverse, complex, web and mobile solutions for any business need. With us you get quality software and perfect service every time.</p>
-            
-          
-          </div>
-          
-          <div class="col-xl-6 col-md-7 offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0">
-            <img src="https://cdn.nimusoft.com/nimusoft/assets/img/landing/software-company/about-img.jpg" class="rounded-3 shadow-sm" alt="Image">
-          </div>
-        
-        
-        </div>
-      </section>
-
-
-      <!-- Industries -->
-      <section style="margin-top: 60px;" class="pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
-        
-        <div class="container">
-
-        <div class="industries-title" style="width:fit-content">
-          
-          <h2 style="color: #154360;" class="h1 pb-3 pb-lg-4">Industries We Serve</h2>
-          <hr class="horizontal-line" style="height: 3px; margin-top: -35px; color: #154360;">
-        
-        </div>
-        
-        
-        
-        <div style="margin-top: 30px;" class="swiper mx-n2" data-swiper-options='{
-          "slidesPerView": 2,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "500": {
-              "slidesPerView": 3,
-              "spaceBetween": 8
-            },
-            "650": {
-              "slidesPerView": 4,
-              "spaceBetween": 8
-            },
-            "900": {
-              "slidesPerView": 5,
-              "spaceBetween": 8
-            },
-            "1100": {
-              "slidesPerView": 6,
-              "spaceBetween": 8
-            }
-          }
-        }'>
-          <div class="swiper-wrapper">
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              
-              <div class="card card-body card-hover px-2 mx-2">
-                
-                <i style="text-align: center; color: #154360; font-size: xx-large; margin-top: -4px;" class='bx bxs-graduation'></i>
-                
-                <h6 style="text-align: center; color: #154360; margin-top: 7px; margin-bottom: -5px;">Education</h6>
-              
-              
-              </div>
-            
-            
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              
-              <div class="card card-body card-hover px-2 mx-2">
-                
-                <i style="text-align: center; color: #154360; font-size: xx-large; margin-top: -4px;" class='bx bxs-building-house'></i>
-                
-                <h6 style="text-align: center; color: #154360; margin-top: 7px; margin-bottom: -5px;">Real Estate</h6>
-              
-              
-              </div>
-            
-            
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              
-              <div class="card card-body card-hover px-2 mx-2">
-                
-                <i style="text-align: center; color: #154360; font-size: xx-large; margin-top: -4px;" class='bx bx-plus-medical'></i>
-                
-                <h6 style="text-align: center; color: #154360; margin-top: 7px; margin-bottom: -5px;">Healthcare</h6>
-              
-              
-              </div>
-            
-            
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              
-              <div class="card card-body card-hover px-2 mx-2">
-                
-                <i style="text-align: center; color: #154360; font-size: xx-large; margin-top: -4px;" class='bx bxs-cart-alt'></i>
-                
-                <h6 style="text-align: center; color: #154360; margin-top: 7px; margin-bottom: -5px;">E-commerce</h6>
-              
-              
-              </div>
-            
-            
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              
-              <div class="card card-body card-hover px-2 mx-2">
-                
-                <i style="text-align: center; color: #154360; font-size: xx-large; margin-top: -4px;" class='bx bxs-hard-hat'></i>
-                
-                <h6 style="text-align: center; color: #154360; margin-top: 7px; margin-bottom: -5px;">Construction</h6>
-              
-              
-              </div>
-            
-            
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              
-              <div class="card card-body card-hover px-2 mx-2">
-                
-                <i style="text-align: center; color: #154360; font-size: xx-large; margin-top: -4px;" class='bx bxs-brain'></i>
-                
-                <h6 style="text-align: center; color: #154360; margin-top: 7px; margin-bottom: -5px;">AI & Robotics</h6>
-              
-              
-              </div>
-            
-            
-            </div>
-          
-          
-          </div>
-
-          <!-- Pagination (bullets) -->
-          <div class="swiper-pagination position-relative pt-2 mt-4">
-          </div>
-        
-        
-        </div>
-        
-        </div>
-        
-      
-      
-      </section>
-
-      <section class="container pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
-        
-        <div class="case-title" style="width:fit-content">
-          
-          <h2 style="color: #154360;" class="h1 pb-3 pb-lg-4">Case Studies</h2>
-          <hr class="horizontal-line" style="height: 3px; margin-top: -35px; color: #154360;">
-        
-        </div>
-
-      
-      </section>
-      
-      
       <!-- Service -->
-      <section style="margin-top: -20px;" class="container mb-md-3 mb-lg-5 pb-5">
+      <section class="container mb-md-3 mb-lg-5 pb-5">
         <div class="row">
           <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
             <div class="pe-lg-5">
@@ -395,9 +211,8 @@
         </div>
       </section>
       
-      
       <!-- Technologies -->
-      <section style="margin-top: -30px; background-color: #154360;" class="pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
+      <section style="background-color: #154360;" class="pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
        
         <div>
            <h6 style="visibility: hidden;">Nimusft Technologies Ltd.</h6>
@@ -678,202 +493,61 @@
       
       
       </section>
-     
-
-      <!-- Testimonials (Slider) -->
-      <section style="margin-top: 30px;" class="container pb-5 mb-md-2 mb-xl-4">
-        <div class="row pb-lg-2">
-          <div class="col-md-5 mb-4 mb-md-0">
-            <div style="background-color: #154360 !important;" class="card justify-content-center bg-dark h-100 p-4 p-lg-5">
-              <div class="p-2">
-                <h3 style="color: white !important;" class="display-4 text-primary mb-1">20+</h3>
-                <h2 class="text-light pb-5 mb-2">Clients Already Served</h2>
-                
-              </div>
-            </div>
-          </div>
-         
-          <div class="col-md-7">
-            <div class="card border-0 shadow-sm p-4 p-xxl-5">
-
-              <!-- Slider prev/next buttons + Quotation mark -->
-              <div class="d-flex justify-content-between pb-4 mb-2">
-                <span class="btn btn-icon btn-primary btn-lg pe-none">
-                  <i class="bx bxs-quote-left"></i>
-                </span>
-                <div class="d-flex">
-                  <button type="button" id="testimonial-prev" class="btn btn-prev btn-icon btn-sm me-2">
-                    <i class="bx bx-chevron-left"></i>
-                  </button>
-                  <button type="button" id="testimonial-next" class="btn btn-next btn-icon btn-sm ms-2">
-                    <i class="bx bx-chevron-right"></i>
-                  </button>
-                </div>
-              </div>   
+      
+      <p style="visibility: hidden;">Nimusft Technologies Ltd.</p>
+      
+      <!-- Contact form -->
+      <section class="container pb-5 mb-2 mb-md-4 mb-lg-5">
+        <div class="position-relative bg-secondary rounded-3 py-5 mb-2">
+          <div class="row pb-2 py-md-3 py-lg-5 px-4 px-lg-0 position-relative zindex-3">
+            <div class="col-xl-3 col-lg-4 col-md-5 offset-lg-1">
+              <p class="lead mb-2 mb-md-3">Ready to get started?</p>
+              <h2 class="h1 pb-3">Don’t Hesitate to Contact Us</h2>
               
-              <!-- Slider -->
-              <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
-                "spaceBetween": 24,
-                "loop": true,
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "clickable": true
-                },
-                "navigation": {
-                  "prevEl": "#testimonial-prev",
-                  "nextEl": "#testimonial-next"
-                }
-              }'>
-                <div class="swiper-wrapper">
-        
-                  <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
-                    <figure class="card h-100 position-relative border-0 bg-transparent">
-                      <blockquote class="card-body p-0 mb-0">
-                        <p class="fs-lg mb-0">Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris. Sagittis gravida vitae porta enim.</p>
-                      </blockquote>
-                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
-                        <img src="https://cdn.nimusoft.com/nimusoft/assets/img/avatar/05.jpg" width="48" class="rounded-circle" alt="Ralph Edwards">
-                        <div class="ps-3">
-                          <h5 class="fw-semibold lh-base mb-0">Ralph Edwards</h5>
-                          <span class="fs-sm text-muted">Head of Marketing at Lorem Company</span>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </div>
-        
-                  <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
-                    <figure class="card h-100 position-relative border-0 bg-transparent">
-                      
-                      <blockquote class="card-body p-0 mb-0">
-                        <p class="fs-lg mb-0">Mi semper risus ultricies orci pulvinar in at enim orci. Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames. Velit lacus mi purus velit justo, amet.</p>
-                      </blockquote>
-                      
-                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
-                        <img src="https://cdn.nimusoft.com/nimusoft/assets/img/avatar/06.jpg" width="48" class="rounded-circle" alt="Annette Black">
-                        <div class="ps-3">
-                          <h5 class="fw-semibold lh-base mb-0">Annette Black</h5>
-                          <span class="fs-sm text-muted">Strategic Advisor at Ipsum Ltd.</span>
-                        </div>
-                      </figcaption>
-                      
-                    </figure>
-                  </div>
-        
-                  <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
-                    <figure class="card h-100 position-relative border-0 bg-transparent">
-                      <blockquote class="card-body p-0 mb-0">
-                        <p class="fs-lg mb-0">Ac at sed sit senectus massa. Massa ante amet ultrices magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim, vel enim egestas nam pellentesque et leo. Elit mi faucibus laoreet aliquam pellentesque sed aliquet integer massa. Orci leo tortor ornare id mattis auctor aliquam volutpat aliquet. Odio lectus viverra eu blandit nunc malesuada vitae eleifend pulvinar.</p>
-                      </blockquote>
-                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
-                        <img src="https://cdn.nimusoft.com/nimusoft/assets/img/avatar/01.jpg" width="48" class="rounded-circle" alt="Darrell Steward">
-                        <div class="ps-3">
-                          <h5 class="fw-semibold lh-base mb-0">Darrell Steward</h5>
-                          <span class="fs-sm text-muted">Project Manager at Company Ltd.</span>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </div>
+              <div class="nav d-block lead pt-lg-5">
+                <a href="#" class="nav-link fw-normal text-decoration-underline p-0 mb-4">sales@nimusoft.com</a>
+                <div style="margin-top: -24px;" class="text-nav">+88 01777 424142</div>
+              </div>
+            
+            
+            </div>
+            
+            <form style="margin-top: 30px;" class="col-lg-6 col-md-7 offset-xl-1 needs-validation" novalidate>
+              <div class="row">
+                <div class="col-sm-6 mb-4">
+                  <label for="name" class="form-label fs-base">Full name</label>
+                  <input type="text" id="name" class="form-control form-control-lg" required>
+                  <div class="invalid-feedback">Please enter your name!</div>
                 </div>
-        
-                <!-- Pagination (bullets) -->
-                <div class="swiper-pagination position-relative pt-3 mt-4"></div>
-              </div>        
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Brands (Carousel) -->
-      <section class="container pb-5">
-       
-        <div class="swiper mx-n2" data-swiper-options='{
-          "slidesPerView": 2,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "500": {
-              "slidesPerView": 3,
-              "spaceBetween": 8
-            },
-            "650": {
-              "slidesPerView": 4,
-              "spaceBetween": 8
-            },
-            "900": {
-              "slidesPerView": 5,
-              "spaceBetween": 8
-            },
-            "1100": {
-              "slidesPerView": 6,
-              "spaceBetween": 8
-            }
-          }
-        }'>
-          <div class="swiper-wrapper">
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              <a href="#" class="card card-body card-hover px-2 mx-2">
-                <img src="https://cdn.nimusoft.com/nimusoft/assets/img/brands/01.svg" class="d-block mx-auto my-2" width="154" alt="Brand">
-              </a>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              <a href="#" class="card card-body card-hover px-2 mx-2">
-                <img src="https://cdn.nimusoft.com/nimusoft/assets/img/brands/02.svg" class="d-block mx-auto my-2" width="154" alt="Brand">
-              </a>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              <a href="#" class="card card-body card-hover px-2 mx-2">
-                <img src="https://cdn.nimusoft.com/nimusoft/assets/img/brands/03.svg" class="d-block mx-auto my-2" width="154" alt="Brand">
-              </a>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              <a href="#" class="card card-body card-hover px-2 mx-2">
-                <img src="https://cdn.nimusoft.com/nimusoft/assets/img/brands/04.svg" class="d-block mx-auto my-2" width="154" alt="Brand">
-              </a>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              <a href="#" class="card card-body card-hover px-2 mx-2">
-                <img src="https://cdn.nimusoft.com/nimusoft/assets/img/brands/05.svg" class="d-block mx-auto my-2" width="154" alt="Brand">
-              </a>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide py-3">
-              <a href="#" class="card card-body card-hover px-2 mx-2">
-                <img src="https://cdn.nimusoft.com/nimusoft/assets/img/brands/06.svg" class="d-block mx-auto my-2" width="154" alt="Brand">
-              </a>
-            </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="email" class="form-label fs-base">Email</label>
+                  <input type="email" id="email" class="form-control form-control-lg" required>
+                  <div class="invalid-feedback">Please provide a valid email address!</div>
+                </div>
+                <div class="col-12 pb-2 mb-4">
+                  <label for="message" class="form-label fs-base">Message</label>
+                  <textarea id="message" class="form-control form-control-lg" rows="4" required></textarea>
+                  <div class="invalid-feedback">Please enter your message!</div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Send request</button>
+            </form>
           </div>
 
-          <!-- Pagination (bullets) -->
-          <div class="swiper-pagination position-relative pt-2 mt-4"></div>
+          <!-- Pattern -->
+          <div class="position-absolute end-0 bottom-0 text-primary">
+            <svg width="416" height="444" viewBox="0 0 416 444" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M240.875 615.746C389.471 695.311 562.783 640.474 631.69 504.818C700.597 369.163 645.201 191.864 496.604 112.299C348.007 32.7335 174.696 87.5709 105.789 223.227C36.8815 358.882 92.278 536.18 240.875 615.746ZM208.043 680.381C388.035 776.757 605.894 713.247 694.644 538.527C783.394 363.807 709.428 144.04 529.436 47.6636C349.443 -48.7125 131.584 14.7978 42.8343 189.518C-45.916 364.238 28.0504 584.005 208.043 680.381Z" fill="currentColor"/><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M262.68 572.818C382.909 637.194 526.686 594.13 584.805 479.713C642.924 365.295 595.028 219.601 474.799 155.224C354.57 90.8479 210.793 133.912 152.674 248.33C94.5545 362.747 142.45 508.442 262.68 572.818ZM253.924 590.054C382.526 658.913 538.182 613.536 601.593 488.702C665.004 363.867 612.156 206.847 483.554 137.988C354.953 69.129 199.296 114.506 135.886 239.341C72.4752 364.175 125.323 521.195 253.924 590.054Z" fill="currentColor"/></svg>
+          </div>
         </div>
-      </section>
-
+      
+     </section>
+    
+    
+    
       {% endblock %}
 
-      {% block custom_scripts %}
-      <script>
-
-      var myCarousel = document.querySelector('#homeCarousel')
-      var carousel = new bootstrap.Carousel(myCarousel)
-
-      </script>
+    {% block custom_scripts %}
+      
     {% endblock %}
 
     

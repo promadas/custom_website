@@ -27,3 +27,12 @@ def contact(request):
     }
     
     return render(request, 'home/contact.html', context)
+
+def case_studies(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/case-studies.html', context)
+    
