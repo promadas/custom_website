@@ -1,0 +1,34 @@
+
+<form method="post" id="contactForm" action="/ajax/contact/" class="needs-validation" novalidate>
+                
+    {% csrf_token %}
+    
+    <div class="row g-4">
+      <div class="col-sm-6">
+        <label for="fn" class="form-label fs-base">Full name</label>
+        <input type="text" name="name" class="form-control form-control-lg" id="fn" required>
+        <div class="invalid-feedback">Please enter your full name!</div>
+      </div>
+      
+      <div class="col-sm-6">
+        <label for="email" class="form-label fs-base">Email</label>
+        <input type="email" name="email" class="form-control form-control-lg" id="email" required>
+        <div class="invalid-feedback">Please provide a valid email address!</div>
+      </div>
+      
+      <div class="col-12 pb-2">
+        <label for="message"  class="form-label fs-base">Message</label>
+        <textarea class="form-control form-control-lg" name="message" id="message" rows="3" required></textarea>
+        <div class="invalid-feedback">Please provide a message!</div>
+      </div>
+      
+      <div id="after_ajax_btn" class="col-12">
+        
+        <button style="width: 150px !important;" type="submit" id="loading" class="btn btn-lg btn-primary w-100 w-sm-auto">Contact Us</button>
+      
+      </div>
+    
+    </div>
+  
+  
+  </form>

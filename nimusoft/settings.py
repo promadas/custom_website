@@ -118,6 +118,8 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000','http://env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
+
 
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

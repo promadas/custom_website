@@ -10,5 +10,5 @@ urlpatterns = [
     path('about-us/', views.about, name='about'),
     path('case-studies/', views.case_studies, name='case_studies'),
     
-    
+    path('ajax/contact/', views.ajax_contact, name='ajax_contact')
 ]

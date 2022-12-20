@@ -1,0 +1,41 @@
+<ul class="list-unstyled d-md-none d-xl-block pb-2 pb-md-3 mb-3">
+    <b><li style="color: #239B56;" class="d-flex align-items-center mb-2">
+      <i class="bx bx-check lead text-primary me-2"></i>
+      Thanks for contacting with us. We will reach you soon.
+    </li>
+    </b>
+    
+</ul>
+
+<form method="post" id="contactForm" action="/ajax/contact/" class="needs-validation" novalidate>
+                
+    {% csrf_token %}
+    
+    <div class="row g-4">
+      <div class="col-sm-6">
+        <label for="fn" class="form-label fs-base">Full name</label>
+        <input type="text" name="name" class="form-control form-control-lg" id="fn" required>
+        <div class="invalid-feedback">Please enter your full name!</div>
+      </div>
+      
+      <div class="col-sm-6">
+        <label for="email" class="form-label fs-base">Email</label>
+        <input type="email" name="email" class="form-control form-control-lg" id="email" required>
+        <div class="invalid-feedback">Please provide a valid email address!</div>
+      </div>
+      
+      <div class="col-12 pb-2">
+        <label for="message"  class="form-label fs-base">Message</label>
+        <textarea class="form-control form-control-lg" name="message" id="message" rows="3" required></textarea>
+        <div class="invalid-feedback">Please provide a message!</div>
+      </div>
+      
+      <div id="after_ajax_btn" class="col-12">
+        
+      
+      </div>
+    
+    </div>
+  
+  
+  </form>
