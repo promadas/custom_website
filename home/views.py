@@ -46,6 +46,15 @@ def case_studies(request):
     return render(request, 'home/case-studies.html', context)
 
 
+def career(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/career.html', context)
+
+
 #Ajax form submission
 def ajax_contact(request):
 
@@ -73,3 +82,117 @@ def ajax_contact(request):
     
     return JsonResponse(data)
 
+
+# Services views
+def medical_solution(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/medical-solution.html', context)
+
+def mobile_app(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/mobile-app.html', context)
+
+def erp_solution(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/erp-solution.html', context)
+
+def e_commerce_solution(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/e-commerce-solution.html', context)
+
+def cyber_security(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/cyber-security.html', context)
+
+def data_analytics(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/data-analytics.html', context)
+
+def cloud_services(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/cloud-services.html', context)
+
+def iot_and_vr(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/services/iot-and-vr.html', context)
+
+#Indries vies
+def education(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/industries/education.html', context)
+
+def real_estate(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/industries/real-estate.html', context)
+
+def construction(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/industries/construction.html', context)
+
+def healthcare(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/industries/healthcare.html', context)
+
+def robotics_and_ai(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/industries/robotics-and-ai.html', context)
+
+def e_commerce(request):
+
+    context = {
+
+    }
+
+    return render(request, 'home/industries/e-commerce.html', context)
