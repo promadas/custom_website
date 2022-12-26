@@ -53,10 +53,7 @@
             
             
             
-            <div class="d-flex flex-column flex-sm-row">
-              <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
-              
-            </div>
+           
           </div>
         
         
@@ -84,10 +81,7 @@
            
             
             
-            <div class="d-flex flex-column flex-sm-row">
-              <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
-              
-            </div>
+            
           </div>
         
         
@@ -113,10 +107,7 @@
             
             
             
-            <div class="d-flex flex-column flex-sm-row">
-              <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
-              
-            </div>
+            
           </div>
         </div>
       </section>
@@ -138,26 +129,22 @@
             
             </div>
             
-            <form style="margin-top: 30px;" class="col-lg-6 col-md-7 offset-xl-1 needs-validation" novalidate>
-              <div class="row">
-                <div class="col-sm-6 mb-4">
-                  <label for="name" class="form-label fs-base">Full name</label>
-                  <input type="text" id="name" class="form-control form-control-lg" required>
-                  <div class="invalid-feedback">Please enter your name!</div>
-                </div>
-                <div class="col-sm-6 mb-4">
-                  <label for="email" class="form-label fs-base">Email</label>
-                  <input type="email" id="email" class="form-control form-control-lg" required>
-                  <div class="invalid-feedback">Please provide a valid email address!</div>
-                </div>
-                <div class="col-12 pb-2 mb-4">
-                  <label for="message" class="form-label fs-base">Message</label>
-                  <textarea id="message" class="form-control form-control-lg" rows="4" required></textarea>
-                  <div class="invalid-feedback">Please enter your message!</div>
-                </div>
+            <div class="col-lg-6 col-md-7 offset-xl-1">
+              
+              <div id="ajax_contact_form">
+
+                {% include 'home/forms/contact_form.html' %}
+              
+              
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Send request</button>
-            </form>
+             
+              
+            
+           
+            </div>
+          
+          
+          
           </div>
 
           <!-- Pattern -->
@@ -173,6 +160,56 @@
       {% endblock %}
 
     {% block custom_scripts %}
+
+    <script>
+      
+      $(function () {
+
+      var saveForm = function () {
+        
+        var form = $(this);
+        $.ajax({
+          url: form.attr("action"),
+          data: form.serialize(),
+          type: form.attr("method"),
+          dataType: 'json',
+          
+          beforeSend: function() {
+            $('#loading').html('<div class="text-center"><div class="spinner-border spinner-border-sm" role="status"><span class="visually-hidden">Loading...</span></div></div>');
+            },
+          
+          success: function (data) {
+            if (data.form_is_valid) {
+              
+              $("#ajax_contact_form").html(data.success_form);
+              $('#after_ajax_btn').html('<a href="/case-studies/"><button style="width: 150px !important;" type="button" class="btn btn-lg btn-primary w-100 w-sm-auto">Refresh</button>');
+              
+              
+            
+            }
+            
+            else {
+              
+              $('#after_ajax_btn').html('<button style="width: 150px !important;" type="submit" id="loading" class="btn btn-lg btn-primary w-100 w-sm-auto">Contact Us</button>');
+              
+            
+            }
+          }
+        });
+        return false;
+      };
+
+      
+      // Submit form
+      $("#contactForm").on("submit", saveForm);
+
+    });
+
+    
+
+
+
+    </script>
       
     {% endblock %}
 
