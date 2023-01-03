@@ -196,3 +196,22 @@ def e_commerce(request):
     }
 
     return render(request, 'home/industries/e-commerce.html', context)
+
+# Career views
+def job_details_one(request):
+    
+    context = {
+
+    }
+
+    return render(request, 'home/career/job-details-one.html', context)
+
+
+def job_details_two(request):
+    
+    context = {
+
+    }
+
+    return render(request, 'home/career/job-details-two.html', context)
+

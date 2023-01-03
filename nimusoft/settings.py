@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0-6tlmcnc8%6r3rt936&si6n@5ehtcigu&$a-7bhad*ritms9t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'nimusoft.com', 'www.nimusoft.com', 'env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
 
@@ -73,16 +73,15 @@ WSGI_APPLICATION = 'nimusoft.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-''' 
+ 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-'''
 
+''' 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -93,6 +92,8 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -164,7 +165,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'https://nimusoft.com', 'https://www.nimusoft.com', 'https://env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
 
 #secure ssl redirect
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

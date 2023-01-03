@@ -33,5 +33,9 @@ urlpatterns = [
     path('construction/', views.construction, name='construction'),
     path('robotics-and-ai/', views.robotics_and_ai, name='robotics_and_ai'),
     path('e-commerce/', views.e_commerce, name='e_commerce'),
+
+    #career urls
+    path('jobs/python-developer-intern/', views.job_details_one, name='job_details_one'),
+    path('jobs/python(djnago)-developer/', views.job_details_two, name='job_details_two'),
     
 ]

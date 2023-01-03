@@ -32,6 +32,12 @@
     <meta name="msapplication-config" content="https://cdn.nimusoft.com/nimusoft/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<!--end::Fonts-->
+		
+    
+    
     <!-- Vendor Styles -->
     <link rel="stylesheet" media="screen" href="https://cdn.nimusoft.com/nimusoft/assets/vendor/boxicons/css/boxicons.min.css"/>
 
@@ -170,6 +176,18 @@
       
         @media screen and (max-width: 600px) {
         
+          .job-name{
+            display: none;
+          }
+          
+          .job-message{
+            margin-top: 60px;
+          }
+          
+          .apply-mobile{
+            margin-top: -45px;
+          }
+
           .mobile-case-title{
             margin-top: 60px !important;
           }
@@ -274,7 +292,11 @@
     
     </style>
 
-    <!-- Theme mode -->
+   
+    <script src="https://kit.fontawesome.com/6d23db9017.js" crossorigin="anonymous"></script>
+     
+
+   <!-- Theme mode -->
     <script>
       let mode = window.localStorage.getItem('mode'),
           root = document.getElementsByTagName('html')[0];
@@ -423,6 +445,11 @@
             <li class="nav-item">
                 <a href="{% url 'home:contact' %}" class="nav-link">Contact Us</a>
             </li>
+            
+            <li class="nav-item">
+              <a href="{% url 'home:career' %}" class="nav-link">Career</a>
+            </li>
+          
 
             
             
