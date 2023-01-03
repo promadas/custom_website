@@ -1,8 +1,10 @@
 from django.http import JsonResponse
 from django.shortcuts import redirect, render
-from .models import Contact
-from .forms import ContactForm
+from .models import Contact, JobsApply
+from .forms import ContactForm, JobsApplyForm
 from django.template.loader import render_to_string
+
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
@@ -200,6 +202,28 @@ def e_commerce(request):
 # Career views
 def job_details_one(request):
     
+    jobs = JobsApply.objects.all()
+    for i in jobs:
+        print(i.name)
+    
+    if request.method == 'POST':
+        form = JobsApplyForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your application has been submitted successfully!')
+            return redirect(request.path_info)
+
+        else:
+            form = JobsApplyForm()
+            
+            messages.warning(request, 'Your application not submitted!')
+            return redirect(request.path_info)
+    
+    else:
+        form = JobsApplyForm()
+    
+
     context = {
 
     }
@@ -208,6 +232,26 @@ def job_details_one(request):
 
 
 def job_details_two(request):
+    
+    
+    if request.method == 'POST':
+        form = JobsApplyForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your application has been submitted successfully!')
+            return redirect(request.path_info)
+
+        else:
+            form = JobsApplyForm()
+            
+            messages.warning(request, 'Your application not submitted!')
+            return redirect(request.path_info)
+    
+    else:
+        form = JobsApplyForm()
+    
+    
     
     context = {
 

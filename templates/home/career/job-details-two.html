@@ -123,9 +123,6 @@
                 <a href="{% url 'home:contact' %}" class="nav-link">Contact Us</a>
             </li>
             
-            <li class="nav-item">
-              <a href="" class="nav-link">Login</a>
-            </li>
             
             
             </ul>
@@ -180,8 +177,20 @@
 
             <div class="col-md-8">
 
-                <!-- Breadcrumb -->
-            <nav style="margin-left: -10px;"  class="container py-4 mb-lg-2" aria-label="breadcrumb">
+                {% if messages %}
+                {% for message in messages %}
+                
+                <div class="alert alert-{{ message.tags }} text-center" role="alert">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {% endif %}
+                
+                
+                
+                
+                  <!-- Breadcrumb -->
+            <nav style="margin-left: -10px; margin-top: -20px;"  class="mobile-breadcrum container py-4 mb-lg-2" aria-label="breadcrumb">
                 <ol class="breadcrumb pt-lg-3 mb-0">
                     <li class="breadcrumb-item">
                     <a style="color: #154360 !important;" href="/career"><b>Jobs</b></a>
@@ -196,17 +205,17 @@
                 </nav>
                 
                 <div style="margin-top: -10px;" class="col-md-12">
-                    <h3 class="job-name">
+                    <h4 class="job-name">
                         Python(django) developer
-                    </h3>
+                    </h4>
     
                     <p class="job-message d-md-none d-xl-block pb-2 pb-md-3 mb-3">
-                        We are looking for hardworking developer. Grab this opportunity to be a part of our team!
+                        We are looking for Python(django) developer responsible for the development, maintenance, and deployment of applications. Your primary focus will be developing high-end applications based on Django by following proper architecture patterns and best practices.
                     </p>
     
                 
-                    <div style="float: right; margin-top: -120px;">
-                        <button style="width: 150px !important;" type="submit" class="apply-mobile btn btn-sm btn-primary w-100 w-sm-auto">Apply Now!</button>
+                    <div style="float: right; margin-top: -150px;">
+                        <button style="width: 150px !important;" type="button" data-bs-toggle="modal" data-bs-target="#jobsApply" class="apply-job-two btn btn-sm btn-primary w-100 w-sm-auto">Apply Now!</button>
                      
                     </div>
                     
@@ -238,34 +247,26 @@
            <div class="col-md-8">
 
             
-            <h4 style="margin-top: -20px;">
+            <h6 style="margin-top: -20px;">
                 Vacancy - (2)
-            </h4>
+            </h5>
             
-            <h4>
-                Job Context
-            </h4>
-                
-               
-            <ul style="margin-left: 7px;">
-                <li>Internship type - Paid</li>
-                <li>Internship period – 4 to 6 months.</li>
-                <li>Job location - Dhaka</li>
-                <li>After completion interns might be able to join the core team based on further review.</li>
-            </ul>
-            
-            <h4>
+            <h6>
                 Job Requirements
-            </h4>
+            </h6>
                 
                
             <ul style="margin-left: 7px;">
                 
-                <li>Basic understanding of software engineering fundamentals and OOP concepts </li>
+                <li>Strong understanding of software engineering fundamentals and OOP concepts </li>
                 
-                <li>Intermediate knowledge of Python programming language</li>
+                <li>Advance knowledge of Python programming language</li>
                 
-                <li>Good knowledge of Relational Database</li>
+                <li>Advance knowledge in SQL and NoSQL</li>
+
+                <li>Avility to make advance databse queries</li>
+
+                <li>Good knowledge of JavaScript / jQuery / React</li>
                 
                 <li>Understanding of version control system(like Git)</li>
 
@@ -276,41 +277,64 @@
             
             </ul>
 
-            <h4>
-                Employment Status
+            <div style="display: flex;">
 
+                <div>
+                    <h6>
+                        Employment Status:
+        
+                    </h6>
+                </div>
+    
+                <div style="margin-left: 10px; margin-top: 1.5px; font-size: small;">
+                    <b>Full-time</b>
+    
+                </div>
+                
+            </div>
 
-            </h4>
-            <p style="margin-left: 23px;" class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">
-                <b>Full-time</b>
-            </p>
+            <div style="display: flex;">
 
-            <h4>
-                Workplace
+                <div>
+                    <h6>
+                        Workplace:
+        
+                    </h6>
+                </div>
+    
+                <div style="margin-left: 10px; margin-top: 1.5px; font-size: small;">
+                    <b>Work at office</b>
+    
+                </div>
+                
+            </div>
 
-            </h4>
-            <p style="margin-left: 23px;" class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">
-                <b>Work at office</b>
-            </p>
             
-            <h4>
-                Working hours
+            <div style="display: flex;">
 
-            </h4>
-            <p style="margin-left: 23px;" class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">
-                <b>10am to 5pm</b>
-            </p>
+                <div>
+                    <h6>
+                        Working Hours:
+        
+                    </h6>
+                </div>
+    
+                <div style="margin-left: 10px; margin-top: 1.5px; font-size: small;">
+                    <b>10am to 5pm</b>
+    
+                </div>
+                
+            </div>
 
-            <h4>
+            <h6>
                 Educational Requirements
-            </h4>
+            </h6>
                 
                
             <ul style="margin-left: 7px;">
                 
                 <li>Bachelor of Science (BSc) in CSE</li>
                 
-                <li>Last semester student or fresh graduates of BSc in Computer Science or relevant</li>
                 
                 <li>Educational qualification might be relaxed for experienced candidates</li>
                 
@@ -318,36 +342,54 @@
             
             </ul>
 
-            <h4>
-                Remuneration
-            </h4>
-                
-               
-            <ul style="margin-left: 7px;">
-                
-                <li>Tk. 6000 - 8000 (Monthly)</li>
-                
-                <li>Please note that this is a paid internship and after completion, interns might be able to join the core team based on further review.</li>
-                
-                
-                
             
-            </ul>
+            <div style="display: flex;">
 
-            <h4>
+                <div>
+                    <h6>
+                        Salary:
+        
+                    </h6>
+                </div>
+    
+                <div style="margin-left: 10px; margin-top: 1.5px; font-size: small;">
+                    <b>Negotiable</b>
+    
+                </div>
+                
+            </div>
+            <div style="display: flex;">
+
+                <div>
+                    <h6>
+                        Experience Requirements:
+        
+                    </h6>
+                </div>
+    
+                <div style="margin-left: 10px; margin-top: 1.5px; font-size: small;">
+                    <b>Minimum 1-2 years</b>
+    
+                </div>
+                
+            </div>
+            
+            
+
+
+            <h6>
                 Other Benefits
-            </h4>
+            </h6>
                 
                
             <ul style="margin-left: 7px;">
                 
                 <li>Excellent culture and working environment</li>
                 
-                <li>Opportunity of job placement</li>
+                <li>Salary Review: Yearly</li>
                 <li>Weekly 2 holidays</li>
+                <li>Festival Bonus: 2</li>
                 <li>Snacks and Unlimited tea/coffee</li>
-                
-                
                 
             
             </ul>
@@ -398,7 +440,7 @@
                 
                 <div class="text-center">
                     
-                    <button style="width: 150px !important; margin-bottom: 35px;" type="submit" class="btn btn-sm btn-primary w-100 w-sm-auto">Apply Now!</button>
+                    <button style="width: 150px !important; margin-bottom: 35px;" type="button" data-bs-toggle="modal" data-bs-target="#jobsApply" class="btn btn-sm btn-primary w-100 w-sm-auto">Apply Now!</button>
                  
                 </div>
 
@@ -415,6 +457,96 @@
       
     
     </div>
+
+
+    <!-- Modal Jobs Apply -->
+  <div class="modal fade" id="jobsApply" tabindex="-1" aria-hidden="true">
+    
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Apply For Python Developer – Intern(Paid)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <form method="post" action="" enctype="multipart/form-data">
+                    
+            <div class="modal-body">
+            
+               
+                    {% csrf_token %}
+                    
+                    <div class="mb-3">
+                      <label class="form-label">Your Name<sup style="color:red;">*</sup></label>
+                      <input type="text" name="name" class="form-control" required>
+                      
+                    </div>
+                    
+                   
+
+                    <div class="mb-3">
+                        <label class="form-label">Your Email<sup style="color:red;">*</sup></label>
+                        <input type="email" name="email" class="form-control" required>
+                        
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        
+                        <label class="form-label">Your Phone Number<sup style="color:red;">*</sup></label>
+                        <input type="text" name="phone" class="form-control" required>
+                        
+                    </div>
+
+                    <div class="mb-3">
+                        
+                        <label class="form-label">Present Address<sup style="color:red;">*</sup></label>
+                        <input type="text" name="present_address" class="form-control" required>
+                        
+                    </div>
+                     
+                    <div class="mb-3">
+                        
+                        <label class="form-label">University</label>
+                        <input type="text" name="university" class="form-control">
+                        
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Cover Letter<sup style="color:red;">*</sup></label>
+                        <input type="text" name="cover_letter" class="form-control" required>
+                        
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label class="form-label">Resume<sup style="color:red;">*</sup>
+                            
+                            <span style="margin-left: 50px; color:green;"></span>
+                           
+                        </label>
+                            
+                         <input style="background-color: white;" type="file" name="resume" class="form-control" accept="pdf/*" required>
+                         
+                    </div>
+            
+            
+            </div>
+            
+            
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        
+        </form>
+        
+        </div>
+    </div>
+  
+
+   </div>
 
    
     {% endblock %}
