@@ -8,12 +8,31 @@
     {% endblock %}
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Software development company">
-    
-    <meta name="keywords" content="">
-    
     <meta name="author" content="Nimusft TechnologiesLtd.">
 
+    {% block socialtag %}
+    <!--  Social tags -->
+    <meta
+      name="keywords"
+      content="Nimusoft, Nimusoft Technologies Ltd., nimusoft, nimusoft technologies ltd"
+    />
+    <meta
+      name="description"
+      content="We are a software development company situated in Bangladesh that offers distinctive software solutions to your business's difficulties. To aid in the expansion of businesses, we create and develop specialized custom software solutions. We offer our services to a variety of sectors, including e-commerce, healthcare, real estate, and education."
+    />
+    <meta name="image" content="https://cdn.nimusoft.com/nimusoft/assets/nimusoft-share.webp" />
+
+    <link rel="canonical" href="https://nimusoft.com/" />
+	
+	  <!-- Facebook -->
+    <meta property="og:url" content="https://nimusoft.com/" />
+    <meta property="og:title" content="Nimusft Technologies Ltd." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdn.nimusoft.com/nimusoft/assets/nimusoft-share.webp" />
+    <meta property="og:image:type" content="image/png" />
+	  
+    {% endblock %}
+    
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
