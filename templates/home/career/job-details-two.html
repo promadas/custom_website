@@ -122,6 +122,23 @@
             <li class="nav-item">
                 <a href="{% url 'home:contact' %}" class="nav-link">Contact Us</a>
             </li>
+
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a href="{% url 'home:dashboard' %}" class="nav-link">Dashboard</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a href="/accounts/logout/" class="nav-link">Logout</a>
+            </li>
+            
+            {% else %}
+            <li class="nav-item">
+                <a href="/accounts/login/" class="nav-link">Login</a>
+            </li>
+
+            {% endif %}
             
             
             
@@ -248,8 +265,12 @@
 
             
             <h6 style="margin-top: -20px;">
+                Application Deadline - 07/01/2023
+            </h6>
+            
+            <h6 style="margin-top: 10px;">
                 Vacancy - (2)
-            </h5>
+            </h6>
             
             <h6>
                 Job Requirements
@@ -466,7 +487,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Apply For Python Developer – Intern(Paid)</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Apply For Python(django) developer</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             
@@ -530,6 +551,9 @@
                          <input style="background-color: white;" type="file" name="resume" class="form-control" accept="pdf/*" required>
                          
                     </div>
+
+                    <input type="text" name="developer" value="True" hidden>
+            
             
             
             </div>

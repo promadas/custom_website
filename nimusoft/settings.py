@@ -82,6 +82,7 @@ DATABASES = {
 }
 '''
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -92,7 +93,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 
 
 # Password validation
@@ -132,7 +132,7 @@ ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_UNIQUE_EMAIL = True
 
-LOGIN_REDIRECT_URL = 'home:index'
+LOGIN_REDIRECT_URL = 'home:dashboard'
 ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login'
 
 #Aws media storage

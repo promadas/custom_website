@@ -477,7 +477,11 @@
               <a href="{% url 'home:career' %}" class="nav-link">Career</a>
             </li>
           
-
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a href="{% url 'home:dashboard' %}" class="nav-link">Dashboard</a>
+            </li>
+            {% endif %}
             
             
             </ul>

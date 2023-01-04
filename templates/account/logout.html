@@ -3,31 +3,8 @@
     
     {% block title %}
       
-      <title>Nimusoft | Jobs </title>
+      <title>Nimusoft | Login </title>
     
-    {% endblock %}
-
-    {% block socialtag %}
-    <!--  Social tags -->
-    <meta
-      name="keywords"
-      content="Nimusoft, Nimusoft Technologies Ltd., nimusoft, nimusoft technologies ltd"
-    />
-    <meta
-      name="description"
-      content="We are a software development company situated in Bangladesh that offers distinctive software solutions to your business's difficulties. To aid in the expansion of businesses, we create and develop specialized custom software solutions. We offer our services to a variety of sectors, including e-commerce, healthcare, real estate, and education."
-    />
-    <meta name="image" content="https://cdn.nimusoft.com/nimusoft/assets/nimusoft-share.webp" />
-
-    <link rel="canonical" href="https://nimusoft.com/" />
-	
-	  <!-- Facebook -->
-    <meta property="og:url" content="https://nimusoft.com/" />
-    <meta property="og:title" content="Nimusft Technologies Ltd." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://cdn.nimusoft.com/nimusoft/assets/jobs-apply.webp" />
-    <meta property="og:image:type" content="image/png" />
-	  
     {% endblock %}
     
     {% block page_loader %}
@@ -165,8 +142,8 @@
             
             
             
+
             
-    
             
             </ul>
         </div>
@@ -202,55 +179,54 @@
     
     
     {% block main %}
+    <!-- Page content -->
 
+    <div class="container">
 
-      <!-- Page Content -->
-      <div class="col-md-12 text-center">
-        <h2 style="margin-top: 20px;" class="text-muted">Our Job Offers</h2>
-        <h6 class="text-muted">Email: contact@nimusoft.com</h6>
-        <p style="padding: 15px;" class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">
-          Join our team! we'll provide you a great opportunity to grow and learn while being a part of a fun team and experience.
-        </p>
-      
-      </div>
+        <div class="row">
 
-      <div class="container">
+            <div class="col-md-4">
 
-        <div>
-          <a href="{% url 'home:job_details_one' %}"><h4 style="color:#154360">Python Developer – Intern(Paid)</h4></a>
-          
-          <div style="display: flex;">
-              <div>
-                <i class="fa-regular fa-calendar"></i>
-              </div>
-              <div>
-                <span>
-                  <p style="margin-left: 5px;">Posted on: 01/01/2023</p>
-                </span>
-              </div>
-          </div>
-          
-        
+            </div>
+
+            <div class="col-md-4">
+               
+               
+                
+                <div class="d-flex flex-wrap h-100 pt-5">
+                    <div class="w-100 align-self-end pt-1 pt-md-4 pb-4" style="max-width: 526px;">
+                      <h4 style="margin-top: 20px;" class="text-center text-xl-start">Are you sure want to logout?</h4>
+                      
+                      
+                      <form method="POST" action="/accounts/logout/" class="needs-validation mb-2">
+                        
+                        {% csrf_token %}
+                        
+                        {% if redirect_field_value %}
+                        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                        {% endif %}
+                        
+                        
+                        
+                        <button style="margin-top: 40px; margin-bottom: 30px;" type="submit" class="btn btn-danger btn-lg w-100">Logout</button>
+                      
+                    </form>
+                     
+                     
+                    </div>
+                    
+
+                  </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+
         </div>
 
-        <div>
-          <a href="{% url 'home:job_details_two' %}"><h4 style="color:#154360">Python(django) developer</h4></a></a>
-          
-          <div style="display: flex;">
-            <div>
-              <i class="fa-regular fa-calendar"></i>
-            </div>
-            <div>
-              <span>
-                <p style="margin-left: 5px;">Posted on: 01/01/2023</p>
-              </span>
-            </div>
-          </div>
-        
-        </div>
-
-      </div>
-
+    </div>
 
    
     {% endblock %}

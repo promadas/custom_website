@@ -5,8 +5,46 @@ from .forms import ContactForm, JobsApplyForm
 from django.template.loader import render_to_string
 
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+
+@login_required()
+def dashboard(request):
+
+    applies = JobsApply.objects.all()
+    
+    
+    context = {
+        'applies': applies
+
+    }
+
+    return render(request, 'dashboard/index.html', context)
+
+
+
+@login_required
+def jobs_apply_delete(request, pk):
+        
+    apply = JobsApply.objects.get(id=pk)
+    
+    if request.method == 'POST':
+
+        apply.delete()
+        messages.success(request, 'Apply deleted successfully!')
+        return redirect('/dashboard/')
+    
+    else:
+        redirect(request.path_info)
+
+    context = {
+        'apply': apply,
+    }
+
+    return render(request, 'dashboard/delete.html', context)
+
+
 def index(request):
     
     context = {

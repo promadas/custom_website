@@ -37,5 +37,9 @@ urlpatterns = [
     #career urls
     path('jobs/python-developer-intern/', views.job_details_one, name='job_details_one'),
     path('jobs/python(djnago)-developer/', views.job_details_two, name='job_details_two'),
+
+    #Dashboard urls
+    path('dashboard/', views.dashboard, name='dashboard'),
+    path('dashboard/apply/delete/<pk>/', views.jobs_apply_delete, name='jobs_apply_delete'),
     
 ]

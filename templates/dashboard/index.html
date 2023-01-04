@@ -1,0 +1,381 @@
+
+    {% extends 'base.html' %}
+    
+    {% block title %}
+      
+      <title>Nimusoft | Dashboard </title>
+    
+    {% endblock %}
+    
+    {% block page_loader %}
+    
+    {% endblock %}
+
+    {% block loading_script %}
+    
+    {% endblock %}
+    
+    
+    {% block header%} 
+    <!-- Navbar -->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+    <header id="gradient" class="header navbar navbar-expand-lg bg-light navbar-sticky">
+    <div class="container px-3">
+        <a href="/" class="navbar-brand pe-3">
+        <img src="https://cdn.nimusoft.com/nimusoft/assets/img/nimusoft-logo.svg" width="120" alt="Nimusoft">
+        
+        </a>
+        
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+            <ul class="navbar-nav nav-custom-right mb-2 mb-lg-0">
+            
+            
+            
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+
+            
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu">
+                
+                
+                <hr style="margin-top: -9px;">
+                <li style="margin-bottom: 8px; margin-top: 8px;">
+                    
+                    <a href="{% url 'home:medical_solution' %}" class="dropdown-item">Medical Solution</a>
+                
+                </li>
+                <hr>
+                
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:mobile_app' %}" class="dropdown-item">Mobile App Development</a></li>
+                <hr>
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:erp_solution' %}" class="dropdown-item">ERP Solution</a></li>
+                <hr>
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:e_commerce_solution' %}" class="dropdown-item">E-commerce Solution</a></li>
+                <hr>
+
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:cyber_security' %}" class="dropdown-item">Cyber Security</a></li>
+                <hr>
+
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:data_analytics' %}" class="dropdown-item">Data Analytics</a></li>
+                
+                <hr>
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:iot_and_vr' %}" class="dropdown-item">IOT & Virtual Reality</a></li>
+                
+                
+                <hr>
+
+                <li style="margin-bottom: 8px; margin-top: 9px;"><a href="{% url 'home:cloud_services' %}" class="dropdown-item">Cloud Services</a></li>
+                <hr style="margin-bottom: -9px;">
+                
+                
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Industries</a>
+                <ul class="dropdown-menu">
+                
+                
+                <hr style="margin-top: -9px;">
+                <li style="margin-bottom: 8px; margin-top: 8px;">
+                    
+                    <a href="{% url 'home:education' %}" class="dropdown-item">Education</a>
+                
+                </li>
+                <hr>
+                
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:real_estate' %}" class="dropdown-item">Real Estate</a></li>
+                <hr>
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:construction' %}" class="dropdown-item">Construction</a></li>
+                <hr>
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:healthcare' %}" class="dropdown-item">Healthcare</a></li>
+                
+                <hr>
+                <li style="margin-bottom: 8px; margin-top: 8px;"><a href="{% url 'home:robotics_and_ai' %}" class="dropdown-item">AI & Robotics</a></li>
+                
+                <hr>
+                <li style="margin-bottom: 8px; margin-top: 9px;"><a href="{% url 'home:e_commerce' %}" class="dropdown-item">E-commerce</a></li>
+                <hr style="margin-bottom: -9px;">
+                
+                
+                </ul>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a href="{% url 'home:case_studies' %}" class="nav-link">Case Studies</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="{% url 'home:about' %}" class="nav-link">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{% url 'home:contact' %}" class="nav-link">Contact Us</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="{% url 'home:career' %}" class="nav-link">Career</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/accounts/logout/" class="nav-link">Logout</a>
+            </li>
+
+            
+            
+            </ul>
+        </div>
+        
+        <div class="offcanvas-header border-top">
+            
+          
+            <p style="margin-top: -8px; margin-bottom: -8px; margin-left: 27px;">Nimusft Technologies Ltd.</p>
+        
+         
+          
+        </div>      
+        
+      
+      </div>
+        
+        
+        
+        
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span style="margin-top: -8px;" class="navbar-toggler-icon"></span>
+        
+        <p style="margin-top: 14px; font-size: 9px;">Menu</p>
+        
+        </button>
+        
+        
+        
+    </div>
+    </header>
+    {% endblock %}
+    
+    
+    
+    
+    {% block main %}
+    
+     
+         
+
+            <div style="padding: 25px;" class="row">
+
+                <div class="col-md-4">
+
+                </div>
+
+                <div class="col-md-4">
+
+                {% if messages %}
+                {% for message in messages %}
+                
+                <div class="alert alert-{{ message.tags }} text-center" role="alert">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {% endif %}
+                
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+                
+
+                
+                
+                <div style="margin-top:30px ;" class="row">
+
+                   
+
+                    <div class="col-md-12">
+
+                        
+                        <div style="margin-top: 50px;" class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                       
+                                       
+                                        <tr>
+                                            
+                                            <th scope="col">Name</th>
+                                            <th scope="col">E.Type</th>
+                                            <th scope="col">Cover Letter</th>
+                                            
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">University</th>
+                                           
+                                            <th scope="col">Address</th>
+                                            
+                                            <th scope="col">Resume</th>
+                                            <th scope="col">Action</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        
+                                      
+                                       {% for data in applies %}
+                                       
+                                        <tr>
+                                            
+                                            <td>
+                                                <strong>{{ data.name }}</strong>
+                                            </td>
+                                            
+                                            <td>
+                                                <div class="d-flex align-items-center nowrap">
+                                                    
+                                                    {% if data.developer %}
+                                                    Developer
+                                                    {% else %}
+                                                    
+                                                    Intern
+                                                    {% endif %}
+                                                    
+                                                    
+                                                
+                                                </div>
+                                                
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center nowrap">
+                                                    
+                                                    
+                                                    {{ data.cover_letter }}
+                                                   
+                                                    
+                                                
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center nowrap">
+                                                    
+                                                    {{ data.phone }}
+                                                    
+                                                    
+                                                   
+                                                </div>
+                                            </td>
+                                            
+                                           
+                                           
+                                            <td>
+                                                
+                                                <div class="d-flex align-items-center nowrap">
+                                                    
+                                                    {{ data.email }}
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                              
+                                            
+                                            </td>
+                                           
+                                            <td>
+                                                
+                                                <div class="d-flex align-items-center nowrap">
+                                                    
+                                                    {{ data.university }}
+                                                    
+                                                    
+                                                   
+                                                   
+                                                </div>
+                                              
+                                            
+                                            </td>
+
+                                            <td>
+                                                
+                                                <div class="d-flex align-items-center nowrap">
+                                                    
+                                                    {{ data.present_address }}            
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                              
+                                            
+                                            </td>
+
+                                            <td>
+                                                   
+                                                    <a href="{{ data.resume.url }}" target="_blank">View</a>
+                                                    
+                                                    
+                                            </td>
+                                            
+                                            <td>
+                                                <div class="d-flex align-items-center nowrap">
+                                                    
+                                                             
+                                                    <a style="text-decoration: none;" href="{{ data.get_delete_url }}"><button style="margin-left: 3px; width: 90px !important; box-shadow: none;" type="button" class="btn btn-sm btn-danger w-100 w-sm-auto">Delete</button></a>
+                     
+                                                    
+                                                    
+                                                </div>
+                                            </td>
+                                            
+                                           
+                                           
+                                           
+                                            
+                                        </tr>
+                                       
+                                        {% endfor %}
+                                        
+                                        
+                                        
+                                    </tbody>
+                                
+                                </table>
+                            </div>
+                        
+                        </div>
+                    
+                    
+                    
+                    </div>
+
+                   
+
+
+                
+                
+                </div>
+
+
+            </div>
+           
+        
+          
+            
+   
+    {% endblock %}
+
+    {% block custom_scripts %}
+      
+    {% endblock %}
+
+    
+    
