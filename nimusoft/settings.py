@@ -10,6 +10,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'nimusoft.com', 'www.nimusoft.com', 'env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
 
+
 # Application definition
 INSTALLED_APPS = [
     
@@ -82,7 +83,6 @@ DATABASES = {
 }
 '''
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -93,7 +93,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -175,7 +174,7 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'https://nimusoft.com', 'https://www.nimusoft.com', 'https://env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
+#CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'https://nimusoft.com', 'https://www.nimusoft.com', 'https://env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
 
 #secure ssl redirect
 SECURE_SSL_REDIRECT = False
