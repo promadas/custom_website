@@ -8,7 +8,10 @@ SECRET_KEY = 'django-insecure-0-6tlmcnc8%6r3rt936&si6n@5ehtcigu&$a-7bhad*ritms9t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['localhost', 'nimusoft.com', 'www.nimusoft.com', 'env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
+#ALLOWED_HOSTS = ['localhost', 'nimusoft.com', 'www.nimusoft.com', 'env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['*']
+
+
 
 # Application definition
 INSTALLED_APPS = [
@@ -73,15 +76,13 @@ WSGI_APPLICATION = 'nimusoft.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
- 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
 
 
 # Password validation
@@ -130,6 +131,7 @@ ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login'
 #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
+
 SITE_ID = 1
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
@@ -156,7 +158,7 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'https://nimusoft.com', 'https://www.nimusoft.com', 'https://env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
+#CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'https://nimusoft.com', 'https://www.nimusoft.com', 'https://env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
 
 #secure ssl redirect
 SECURE_SSL_REDIRECT = False

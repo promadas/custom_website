@@ -198,6 +198,211 @@
         margin-left: 10px !important;
       
       }
+
+      @media screen and (max-width: 1224px) {
+        
+        .mobile-breadcrum{
+          margin-top: 0px !important;
+        }
+        
+        .job-name{
+          display: none;
+        }
+        
+        .job-message{
+          margin-top: 60px;
+        }
+        
+        .apply-mobile{
+          margin-top: -75px;
+        }
+
+        .apply-job-two{
+          margin-top: -135px;
+        }
+
+        .mobile-case-title{
+          margin-top: 60px !important;
+        }
+      
+        .ind-title{
+        margin-top: 0px !important;
+      }
+      
+        .about-photo{
+        margin-top: -50px !important;
+      }
+      
+        .industries-title{
+          margin-top: -80px !important;
+      }
+      
+      .case-title{
+          margin-top: -40px !important;
+      }
+        
+      .horizontal-line{
+        display: block !important;
+
+       }
+      
+      
+      .technology-logos{
+        margin-left: -2px !important;
+      }
+    
+      .mobile-col {
+        margin-left: 0!important;
+        margin-right: 0!important;
+        width: 44%;
+        float: left;
+      }
+      
+      .carousel-item{
+      
+      margin-top: 0px;
+
+       }
+      
+      .about-mobile{
+       
+        margin-top: -480px;
+      }
+
+      .nav-custom-right{
+        position: relative;
+        float: left;
+      }
+      
+      .jarallax{
+        height: 230px !important;
+        margin-top: -10px;
+        
+      }
+
+      .jarallax-img{
+        width: 100% !important;
+      }
+      
+      hr{
+        display: none;
+      }
+
+      .dropdown-item{
+        font-size: medium;
+      }
+    
+    }
+      
+
+      /*@media screen and (max-width: 769px) {
+      /* For Tablet View */
+    
+  
+    @media screen and (min-device-width: 768px)
+    and (max-device-width: 1224px) {
+
+
+        .mobile-breadcrum{
+          margin-top: 0px !important;
+        }
+        
+        .job-name{
+          display: none;
+        }
+        
+        .job-message{
+          margin-top: 60px;
+        }
+        
+        .apply-mobile{
+          margin-top: -75px;
+        }
+
+        .apply-job-two{
+          margin-top: -135px;
+        }
+
+        .mobile-case-title{
+          margin-top: 60px !important;
+        }
+      
+        .ind-title{
+        margin-top: 0px !important;
+      }
+      
+        .about-photo{
+        margin-top: -50px !important;
+      }
+      
+        .industries-title{
+          margin-top: -80px !important;
+      }
+      
+      .case-title{
+          margin-top: -40px !important;
+      }
+        
+      .horizontal-line{
+        display: block !important;
+
+       }
+      
+      
+      .technology-logos{
+        margin-left: -2px !important;
+      }
+    
+      .mobile-col {
+        margin-left: 0!important;
+        margin-right: 0!important;
+        width: 21vw;
+        float: center;
+      }
+      
+      .carousel-item{
+      
+      margin-top: 0px;
+
+       }
+      
+      .about-mobile{
+       
+        margin-top: -480px;
+      
+        
+      }
+
+      .nav-custom-right{
+        position: relative;
+        float: left;
+      }
+      
+      .jarallax{
+        height: 230px !important;
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+     
+    .jarallax-img{
+        width: 100% !important;
+       
+      }
+      
+      hr{
+        display: none;
+      }
+
+      .dropdown-item{
+        font-size: medium;
+      }
+    
+    }
+
+    
       
       
         @media screen and (max-width: 600px) {
@@ -262,12 +467,14 @@
         .carousel-item{
         
         margin-top: 0px;
+        
 
          }
         
         .about-mobile{
          
           margin-top: -480px;
+          
         }
 
         .nav-custom-right{
@@ -310,7 +517,7 @@
       }
       
       .zoom-in-zoom-out {
-        animation: zoom-in-zoom-out 7s ease-out infinite;
+        animation: zoom-in-zoom-out 8s ease-out infinite;
       }
       
       @keyframes zoom-in-zoom-out {
@@ -319,7 +526,7 @@
           transform: scale(1, 1);
         }
         100% {
-          transform: scale(1.3, 1.3);
+          transform: scale(1.2, 1.2);
         }
       }
     
@@ -562,12 +769,12 @@
                   <a style="color: white !important;" class="py-2">Useful Links</a>
                 </h6>
                 <div class="d-lg-block" >
+
                   <ul class="nav flex-column pb-lg-1 mb-lg-3">
                     <li class="nav-item"><a href="/" class="nav-link social-hover d-inline-block px-0 pt-1 pb-2">Home</a></li>
                     <li class="nav-item"><a href="{% url 'home:contact' %}" class="nav-link social-hover d-inline-block px-0 pt-1 pb-2">Contact Us</a></li>
                     <li class="nav-item"><a href="{% url 'home:case_studies' %}" class="nav-link social-hover d-inline-block px-0 pt-1 pb-2">Case Studies</a></li>
                     <li class="nav-item"><a href="{% url 'home:about' %}" class="nav-link social-hover d-inline-block px-0 pt-1 pb-2">About Us</a></li>
-                    
                   </ul>
                   
                   <ul class="nav flex-column mb-2 mb-lg-0">
@@ -632,16 +839,13 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    
     <script src="https://cdn.nimusoft.com/nimusoft/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     
     <script src="https://cdn.nimusoft.com/nimusoft/assets/vendor/jarallax/dist/jarallax.min.js"></script>
     
-   
-    
     <script src="https://cdn.nimusoft.com/nimusoft/assets/vendor/swiper/swiper-bundle.min.js"></script>
     
-  
+
     <!-- Main Theme Script -->
     <script src="https://cdn.nimusoft.com/nimusoft/assets/js/theme.min.js"></script>
     {% endblock %}
