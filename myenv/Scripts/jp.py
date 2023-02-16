@@ -1,4 +1,4 @@
-#!C:\Users\User\Desktop\nimusoft\nimusoft\myenv\scripts\python.exe
+#!C:\Users\User\Desktop\nimusoft\nimusoft\myenv\Scripts\python.exe
 
 import sys
 import json
