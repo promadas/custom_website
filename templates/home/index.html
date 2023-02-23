@@ -40,7 +40,7 @@
      
      {% block main %}
      <!-- Hero slides -->
-      <div id="homeCarousel" class="carousel slides carousel-fade" data-bs-ride="carousel">
+    <div id="homeCarousel" class="carousel slides carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
 
           <div class="carousel-item active">
@@ -54,33 +54,42 @@
           </div>
 
         </div>
-      </div>
+    </div>
 
       
       <!-- About -->
-      <section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
-        {% comment %} <h1 class=" text-center border-bottom pb-4">Nimusft</h1> {% endcomment %}
-        
-        <div class="card text-center">
-          <div class="card-header">
-            
-          </div>
-          <div class="card-body">
-            <h2 class="card-title">Nimusft Technologies Ltd</h2>
-            <span class="h5 text-muted">A Software development company</span>
-            
-            <div class="text-justify">
-              <p class="about text-justify">We are a software development company situated in Bangladesh that offers distinctive software solutions to your business's difficulties. To aid in the expansion of businesses, we create and develop specialized custom software solutions. We offer our services to a variety of sectors, including e-commerce, healthcare, real estate, and education.</p>
-            </div>
 
-          </div>
-          <div class="card-footer text-muted">
-            
-          </div>
+      <section class="position-relative border-top overflow-hidden">
+
+        <div class="container py-9 py-lg-11 position-relative">
+            <div class="row position-relative align-items-center">
+                
+                <div class="col-12 mb-7 mb-md-0 col-md-7 me-auto">
+                    <h2 class="mb-4 fw-lighter display-4 aos-init aos-animate" data-aos="fade-down">
+                      Empowering your digital world with <span class="fw-bolder">Nimusoft's</span> intelligent software solutions.
+                    </h2>
+                    <p class="mb-5 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                    
+                        We are a software development company situated in Bangladesh that offers distinctive software solutions to your business's difficulties.
+                        To aid in the expansion of businesses, – we create and develop specialized custom software solutions. We offer our services to a variety of sectors, including e-commerce, healthcare, real estate, and education.
+                    </p>
+
+                    {% comment %} <div data-aos="fade-up" data-aos-delay="150" class="aos-init aos-animate">
+                        <div class="p-1 bg-gradient-primary d-inline-block rounded-3 hover-shadow">
+                            <a href="#!" class="btn btn-outline-white border-0 btn-hover-arrow btn-lg">
+                                <span>Purchase Now</span>
+                            </a>
+                        </div>
+                    </div> {% endcomment %}
+
+                </div>
+                <div class="col-md-5 col-lg-4 mb-4 mb-md-0 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <img src="/static/img/about/about.svg" class="img-fluid flip-x" alt="">
+                </div>
+            </div>
         </div>
 
       </section>
-
       
 
 
@@ -526,7 +535,7 @@
           
           <div class="col-md-6">
             <h2 class="h3 mb-sm-4">Construction Management Software</h2>
-            <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">
+            <p class="d-md d-xl-block pb-2 pb-md-3 mb-3">
               
               Business workflows for construction are managed by construction management software. Utilizing construction management systems enables contractors, property builders, and subcontractors to coordinate resources, communicate job progress, and manage projects, contracts, and budgets. 
               To offer value across the whole construction lifecycle, Nimusoft creates end-to-end construction software. We create custom software for managing your projects, resources, and finances from project planning through project closeout. On a single platform, our ERP system links teams, devices, and all company operations. All facets of construction are covered by our cloud-based solutions for the industry, including project delivery, finance and operations, time management, supply chain management, and service management.
@@ -550,7 +559,7 @@
           <div class="col-md-6 ordr-md-1">
             
             <h2 class="h3 mb-sm-4">Real Estate ERP and Management Software</h2>
-            <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">
+            <p class="d-md d-xl-block pb-2 pb-md-3 mb-3">
               
               We develop custom web based software that controls all operational processes and activities of real estate agencies, from managing a property to controlling real estate agencies, agents, and clients as well as financial transactions. Our advanced software solutions will help you to handle processes more effectively. It offers thorough reports for managing the effectiveness and performance of real estate agencies and helps management to make better decisions. It provides your company both immediate and long-term advantages, such as increased profit margins and cost effectiveness across the board.
 
@@ -576,7 +585,7 @@
           </div>
           <div class="col-md-6">
             <h2 class="h3 mb-sm-4">Healthcare System And Medical ERP</h2>
-            <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">
+            <p class="d-md d-xl-block pb-2 pb-md-3 mb-3">
               Well executed Healthcare Management software help to remove on a great deal of manual work that is basically performed in medical clinics particularly the ones where documentation and record keeping are required. Healthcare management system is a cloud-based web framework for managing medical information that registers and includes data from every department to automate all internal processes. It aims to accomplish a wide variety of activities, from improving patient experience to optimizing the workflow for medical personnel, as well as everything in between, including lowering administrative expenses and minimizing mistakes.
               We develop custom cloud based software for hospitals and diagnostic centers that combined by clinicians, patients, medical supplies, laboratory results data, insurance, medical bills, doctor appointments, and reports management features.
 
@@ -595,7 +604,9 @@
       <!-- Testimonials (Slider) -->
       <section style="margin-top: 30px;" class="container pb-5 mb-md-2 mb-xl-4">
         <div class="row pb-lg-2">
+
           <div class="col-md-5 mb-4 mb-md-0">
+
             <div style="background-color: #154360 !important;" class="card justify-content-center bg-dark h-100 p-4 p-lg-5">
               <div class="p-2">
                 <h3 style="color: white !important;" class="display-4 text-primary mb-1">20+</h3>
@@ -603,9 +614,11 @@
                 
               </div>
             </div>
+
           </div>
          
           <div class="col-md-7">
+
             <div class="card border-0 shadow-sm p-4 p-xxl-5">
 
               <!-- Slider prev/next buttons + Quotation mark -->
@@ -614,33 +627,53 @@
                   <i class="bx bxs-quote-left"></i>
                 </span>
                 <div class="d-flex">
-                  <button type="button" id="testimonial-prev" class="btn btn-prev btn-icon btn-sm me-2">
+                  <button type="button" id="testimonial-prev" class="btn btn-prev btn-icon btn-sm me-2" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-1e7a155c2e807fb7">
                     <i class="bx bx-chevron-left"></i>
                   </button>
-                  <button type="button" id="testimonial-next" class="btn btn-next btn-icon btn-sm ms-2">
+                  <button type="button" id="testimonial-next" class="btn btn-next btn-icon btn-sm ms-2" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-1e7a155c2e807fb7">
                     <i class="bx bx-chevron-right"></i>
                   </button>
                 </div>
               </div>   
               
               <!-- Slider -->
-              <div class="swiper mx-0 mb-md-n2 mb-xxl-n3" data-swiper-options='{
-                "spaceBetween": 24,
-                "loop": true,
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "clickable": true
+              <div class="swiper mx-0 mb-md-n2 mb-xxl-n3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
+                &quot;spaceBetween&quot;: 24,
+                &quot;loop&quot;: true,
+                &quot;pagination&quot;: {
+                  &quot;el&quot;: &quot;.swiper-pagination&quot;,
+                  &quot;clickable&quot;: true
                 },
-                "navigation": {
-                  "prevEl": "#testimonial-prev",
-                  "nextEl": "#testimonial-next"
+                &quot;navigation&quot;: {
+                  &quot;prevEl&quot;: &quot;#testimonial-prev&quot;,
+                  &quot;nextEl&quot;: &quot;#testimonial-next&quot;
                 }
-              }'>
-                <div class="swiper-wrapper">
+              }">
+
+
+
+                  <div class="swiper-wrapper" id="swiper-wrapper-1e7a155c2e807fb7" aria-live="polite" style="transform: translate3d(-312px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide h-auto swiper-slide-duplicate swiper-slide-prev" data-swiper-tab="#author-3" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 288px; margin-right: 24px;">
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      <blockquote class="card-body p-0 mb-0">
+                        
+                        <p class="fs-lg mb-0">
+                          Nimusoft team managed to improve our existing service architecture, add important features to our new site and real estate management system. All project management and communications were done in a very professional manner from the first. Additionally, the code's quality was excellent and consistent. Nimusoft comes with our highest recommendation for anyone looking to successfully plan and carry out a project of the best quality.
+                        </p>
+                      
+                      </blockquote>
+                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
+                        <img src="https://cdn.nimusoft.com/nimusoft/assets/img/avatar/client-masud-2.jpg" width="48" height="48" class="rounded-circle" alt="Masud Alam">
+                        <div class="ps-3">
+                          <h5 class="fw-semibold lh-base mb-0">Md Masud Alam</h5>
+                          <span class="fs-sm text-muted">Manager, Moslama Shafiqul Islam Real Estate Ltd.</span>
+                        </div>
+                      
+                      </figcaption>
+                    </figure>
+                  </div>
         
                   <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
-                    
+                  <div class="swiper-slide h-auto swiper-slide-active" data-swiper-tab="#author-1" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 288px; margin-right: 24px;">
                     
                     <figure class="card h-100 position-relative border-0 bg-transparent">
                       
@@ -661,15 +694,10 @@
                       
                     </figure>
                     
-                    
-                    
-                    
-                  
-                  
                   </div>
         
                   <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
+                  <div class="swiper-slide h-auto swiper-slide-next" data-swiper-tab="#author-2" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 288px; margin-right: 24px;">
                     
                     <figure class="card h-100 position-relative border-0 bg-transparent">
                       <blockquote class="card-body p-0 mb-0">
@@ -686,15 +714,11 @@
                         </div>
                       </figcaption>
                     </figure>
-                    
-                    
-                    
-                  
-                  
+
                   </div>
         
                   <!-- Item -->
-                  <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
+                  <div class="swiper-slide h-auto swiper-slide-duplicate-prev" data-swiper-tab="#author-3" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 288px; margin-right: 24px;">
                     
                     <figure class="card h-100 position-relative border-0 bg-transparent">
                       <blockquote class="card-body p-0 mb-0">
@@ -713,20 +737,42 @@
                       
                       </figcaption>
                     </figure>
-                    
-                  
-                  
-                  
+
                   </div>
+
+                  <div class="swiper-slide h-auto swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-tab="#author-1" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 288px; margin-right: 24px;">
+
+                    <figure class="card h-100 position-relative border-0 bg-transparent">
+                      
+                      <blockquote class="card-body p-0 mb-0">
+                        <p class="fs-lg mb-0">Nimusoft significantly increased our productivity because of their enthusiasm and superior technological knowledge. They have excellent communication skills which improved our product faster and makes our customers happier. They frequently came up with better solutions than they were provided. Nimusoft provided us with cloud engineering expertise also. They were focused on creating quality features and more efficient solutions for users.</p>
+                      </blockquote>
+                      
+                      <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
+                        <img src="https://cdn.nimusoft.com/nimusoft/assets/img/avatar/client-islam-1.png" width="48" height="48" class="rounded-circle" alt="Shafiqul Islam">
+                        <div class="ps-3">
+                          <h5 class="fw-semibold lh-base mb-0">Mohammad Shafiqul Islam</h5>
+                          <span class="fs-sm text-muted">Chairman, Faris Al-Reem Constructing Co.</span>
+                        </div>
+                      </figcaption>
+                      
+                    </figure>
+
+                  </div>
+
                 </div>
         
                 <!-- Pagination (bullets) -->
-                <div class="swiper-pagination position-relative pt-3 mt-4"></div>
-              </div>        
+                <div class="swiper-pagination position-relative pt-3 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>        
             </div>
+
           </div>
+
         </div>
       </section>
+
+
 
 
 
