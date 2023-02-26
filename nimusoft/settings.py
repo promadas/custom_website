@@ -11,8 +11,6 @@ DEBUG = False
 #ALLOWED_HOSTS = ['localhost', 'nimusoft.com', 'www.nimusoft.com', 'env-nimusoft.eba-bartpuiq.us-west-2.elasticbeanstalk.com']
 ALLOWED_HOSTS = ['*']
 
-
-
 # Application definition
 INSTALLED_APPS = [
     
@@ -76,14 +74,14 @@ WSGI_APPLICATION = 'nimusoft.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-'''
+''' 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-''' 
+'''
 
 DATABASES = {
     'default': {
@@ -95,6 +93,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
