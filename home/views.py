@@ -154,7 +154,7 @@ def e_commerce_solution(request):
 
     }
 
-    return render(request, 'home/services/e-commerce-solution.html', context)
+    return render(request, 'home/services/e-commerce.html', context)
 
 def cyber_security(request):
 
