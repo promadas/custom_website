@@ -19,8 +19,8 @@ section {
 
 
 .py-9 {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 
 
@@ -92,8 +92,8 @@ section {
 }
 
 .py-9 {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 
 .position-relative {
@@ -109,8 +109,8 @@ section {
 }
 
 .py-9 {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 
 .position-relative {
@@ -169,8 +169,8 @@ section {
 }
 
 .py-9 {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 .position-relative {
     position: relative !important;
@@ -203,8 +203,8 @@ section {
 }
 
 .py-9 {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 .position-relative {
     position: relative !important;
@@ -247,8 +247,8 @@ section {
     z-index: 1 !important;
 }
 .py-9 {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 .position-relative {
     position: relative !important;
@@ -472,5 +472,8 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: underline;
 }
+
+/*  New work for services Mobile Appication Development page by raju mia */
+
 
 
